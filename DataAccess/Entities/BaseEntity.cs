@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Entities
 {
-    public class Directory
+    public class BaseEntity
     {
-        public int UserId { get; set; }
-        public int PersonId { get; set; }
+        public int Id { get; set; }
+        public bool IsDeleted { get; set; }=false;
+        public DateTime CreateDate { get; set; }
     }
 }

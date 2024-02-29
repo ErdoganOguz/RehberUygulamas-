@@ -6,17 +6,14 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Entities
 {
-    public class Person
+    public class Person : BaseEntity
     {
-        public int PersonId { get; set; }
-        public int FirstNameId { get; set; }
-        public int LastNameId { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public int DepartmentId { get; set; }
         public int JobTitleId { get; set; }
-        public int OperatorId { get; set; }
-        public int Number { get; set; }
-        public int EmailId { get; set; }
+        public string Number { get; set; }
         public string EmailAdress { get; set; }
-        public int view {  get; set; }
+  
     }
 }
