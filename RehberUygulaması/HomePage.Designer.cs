@@ -28,12 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            PersonListDgw = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)PersonListDgw).BeginInit();
+            SuspendLayout();
+            // 
+            // PersonListDgw
+            // 
+            PersonListDgw.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            PersonListDgw.Location = new Point(12, 12);
+            PersonListDgw.Name = "PersonListDgw";
+            PersonListDgw.RowHeadersWidth = 51;
+            PersonListDgw.Size = new Size(1126, 873);
+            PersonListDgw.TabIndex = 0;
+            // 
+            // HomePage
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1902, 1033);
+            Controls.Add(PersonListDgw);
+            Name = "HomePage";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Form1";
+            WindowState = FormWindowState.Maximized;
+            Load += HomePage_Load;
+            ((System.ComponentModel.ISupportInitialize)PersonListDgw).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private DataGridView PersonListDgw;
     }
 }

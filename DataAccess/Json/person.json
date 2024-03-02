@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataAccess.Json
+{
+    class person
+  {
+    "FirstName": "Oğuz",
+    "LastName": "Erdoğan",
+    "deparmentId": 1,
+    "JobTitleId": 1,
+    "Number": "55566665856",
+    "EmailAdress" :  "dffd"
+  }
+}

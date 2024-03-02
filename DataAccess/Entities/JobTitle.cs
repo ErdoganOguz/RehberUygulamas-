@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Entities
 {
-    public class JobTitle
+    public class JobTitle:BaseEntity
     {
-        public int JobTitleId { get; set; }
+
         public string jobTitle { get; set; }
     }
 }

@@ -1,3 +1,10 @@
+using Business;
+using DataAccess.Entities;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System.Text.Json.Serialization;
+
+
 namespace RehberUygulaması
 {
     internal static class Program
@@ -12,6 +19,7 @@ namespace RehberUygulaması
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new HomePage());
+            
         }
     }
 }
