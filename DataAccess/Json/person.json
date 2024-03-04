@@ -1,18 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataAccess.Json
-{
-    class person
+﻿[
   {
-    "FirstName": "Oğuz",
+    "FirstName": "Oguz",
     "LastName": "Erdoğan",
     "deparmentId": 1,
     "JobTitleId": 1,
     "Number": "55566665856",
-    "EmailAdress" :  "dffd"
+    "EmailAdress": "dffd"
+  },
+  {
+    "FirstName": "Dilara",
+    "LastName": "Dokuyucu",
+    "deparmentId": 1,
+    "JobTitleId": 2,
+    "Number": "55566665856",
+    "EmailAdress": "dffd"
+  },
+
+  {
+    "FirstName": "Ali",
+    "LastName": "Veli",
+    "deparmentId": 2,
+    "JobTitleId": 2,
+    "Number": "55566665856",
+    "EmailAdress": "dffd"
   }
-}
+  
+]

@@ -1,54 +1,35 @@
 using DataAccess.Entities;
+using DataAccess.Concrete;
 using System.Text.Json.Nodes;
 using Newtonsoft.Json;
 using System.Net;
+using System.Data;
+using System.Windows.Forms;
 
 namespace RehberUygulaması
 {
     public partial class HomePage : Form
+
     {
         public HomePage()
         {
             InitializeComponent();
         }
+        EfPersonDal efPersonDal = new EfPersonDal();
 
-        private void HomePage_Load(object sender, EventArgs e)
+        public void HomePage_Load(object sender, EventArgs e)
         {
-            JsonListe();
+
+            efPersonDal.JsonList();
+            PersonListDgw.DataSource = efPersonDal.JsonList();
 
         }
-        //public List<Person> People()
-        //{
-
-        //    string fileName = "person.json";
-        //    string jsonString = File.ReadAllText(fileName);
-        //    Person person = JsonSerializer.Deserialize<Person>(jsonString);
-        //    PersonListDgw.DataSource = jsonString;
-
-        //    List<Person> people = null;
-        //    return people;
-        //}
-
-        public List<Person> JsonListe()
+       
+        private void PersonAddBtn_Click(object sender, EventArgs e)
         {
-            List<Person> JsonModelList = null;
-
-            try
-            {
-                string fileName = "C:\\Users\\oğuz\\source\\repos\\RehberUygulaması\\DataAccess\\Json\\person.json";
-                String JsonText = File.ReadAllText(fileName);
-                JsonModelList = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Person>>(JsonText);
-                PersonListDgw.DataSource = JsonModelList;
-
-            }
-            catch (Exception ex)
-            {
-                JsonModelList = null;
-            }
-
-            return JsonModelList;
+            PersonAddFRM FRM = new PersonAddFRM();
+            this.Hide();
+            FRM.Show();
         }
-
-
     }
 }

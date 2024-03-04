@@ -26,9 +26,10 @@
         ///  Required method for Designer support - do not modify
         ///  the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             PersonListDgw = new DataGridView();
+            PersonAddBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)PersonListDgw).BeginInit();
             SuspendLayout();
             // 
@@ -41,11 +42,22 @@
             PersonListDgw.Size = new Size(1126, 873);
             PersonListDgw.TabIndex = 0;
             // 
+            // PersonAddBtn
+            // 
+            PersonAddBtn.Location = new Point(1234, 707);
+            PersonAddBtn.Name = "PersonAddBtn";
+            PersonAddBtn.Size = new Size(94, 29);
+            PersonAddBtn.TabIndex = 1;
+            PersonAddBtn.Text = "Kişi Ekle";
+            PersonAddBtn.UseVisualStyleBackColor = true;
+            PersonAddBtn.Click += PersonAddBtn_Click;
+            // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1902, 1033);
+            Controls.Add(PersonAddBtn);
             Controls.Add(PersonListDgw);
             Name = "HomePage";
             StartPosition = FormStartPosition.CenterScreen;
@@ -58,6 +70,7 @@
 
         #endregion
 
-        private DataGridView PersonListDgw;
+        public DataGridView PersonListDgw;
+        private Button PersonAddBtn;
     }
 }
