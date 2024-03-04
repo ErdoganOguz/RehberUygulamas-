@@ -19,6 +19,7 @@ namespace RehberUygulaması
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new HomePage());
+            PersonAddFRM fRM = new PersonAddFRM();
             
         }
     }

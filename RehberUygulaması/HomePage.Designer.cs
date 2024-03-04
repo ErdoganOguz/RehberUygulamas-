@@ -60,6 +60,7 @@
             Controls.Add(PersonAddBtn);
             Controls.Add(PersonListDgw);
             Name = "HomePage";
+            ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             WindowState = FormWindowState.Maximized;

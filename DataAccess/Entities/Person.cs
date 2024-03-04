@@ -2,8 +2,14 @@
 
 namespace DataAccess.Entities
 {
-    public class Person
+    public class Person: BaseEntity
+
     {
+        //public enum DepartmentType: int
+        //{
+        //    Programmer = 1,
+        //    HelpDesk = 2
+        //};
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int DepartmentId { get; set; }

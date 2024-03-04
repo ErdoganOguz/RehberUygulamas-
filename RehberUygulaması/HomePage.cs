@@ -17,6 +17,8 @@ namespace RehberUygulaması
         }
         EfPersonDal efPersonDal = new EfPersonDal();
 
+
+
         public void HomePage_Load(object sender, EventArgs e)
         {
 
@@ -24,12 +26,15 @@ namespace RehberUygulaması
             PersonListDgw.DataSource = efPersonDal.JsonList();
 
         }
-       
+
         private void PersonAddBtn_Click(object sender, EventArgs e)
         {
             PersonAddFRM FRM = new PersonAddFRM();
-            this.Hide();
             FRM.Show();
+            this.Hide();
+
         }
+
+       
     }
 }

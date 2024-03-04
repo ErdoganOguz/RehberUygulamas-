@@ -28,61 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
+            PhoneNumberTxt = new TextBox();
+            EMailTxt = new TextBox();
+            FirstNameTxt = new TextBox();
+            JobTitleTxt = new TextBox();
+            LastNameTxt = new TextBox();
+            DepartmentTxt = new TextBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
+            BackBtn = new Button();
+            AddBtn = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // PhoneNumberTxt
             // 
-            textBox1.Location = new Point(179, 219);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(169, 27);
-            textBox1.TabIndex = 5;
+            PhoneNumberTxt.Location = new Point(179, 219);
+            PhoneNumberTxt.Name = "PhoneNumberTxt";
+            PhoneNumberTxt.Size = new Size(169, 27);
+            PhoneNumberTxt.TabIndex = 5;
             // 
-            // textBox2
+            // EMailTxt
             // 
-            textBox2.Location = new Point(179, 262);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(169, 27);
-            textBox2.TabIndex = 6;
+            EMailTxt.Location = new Point(179, 262);
+            EMailTxt.Name = "EMailTxt";
+            EMailTxt.Size = new Size(169, 27);
+            EMailTxt.TabIndex = 6;
             // 
-            // textBox3
+            // FirstNameTxt
             // 
-            textBox3.Location = new Point(179, 56);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(169, 27);
-            textBox3.TabIndex = 1;
+            FirstNameTxt.Location = new Point(179, 56);
+            FirstNameTxt.Name = "FirstNameTxt";
+            FirstNameTxt.Size = new Size(169, 27);
+            FirstNameTxt.TabIndex = 1;
             // 
-            // textBox4
+            // JobTitleTxt
             // 
-            textBox4.Location = new Point(179, 173);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(169, 27);
-            textBox4.TabIndex = 4;
+            JobTitleTxt.Location = new Point(179, 173);
+            JobTitleTxt.Name = "JobTitleTxt";
+            JobTitleTxt.Size = new Size(169, 27);
+            JobTitleTxt.TabIndex = 4;
             // 
-            // textBox5
+            // LastNameTxt
             // 
-            textBox5.Location = new Point(179, 96);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(169, 27);
-            textBox5.TabIndex = 2;
+            LastNameTxt.Location = new Point(179, 96);
+            LastNameTxt.Name = "LastNameTxt";
+            LastNameTxt.Size = new Size(169, 27);
+            LastNameTxt.TabIndex = 2;
             // 
-            // textBox6
+            // DepartmentTxt
             // 
-            textBox6.Location = new Point(179, 135);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(169, 27);
-            textBox6.TabIndex = 3;
+            DepartmentTxt.Location = new Point(179, 135);
+            DepartmentTxt.Name = "DepartmentTxt";
+            DepartmentTxt.Size = new Size(169, 27);
+            DepartmentTxt.TabIndex = 3;
             // 
             // label1
             // 
@@ -138,23 +140,45 @@
             label6.TabIndex = 11;
             label6.Text = "E-Mail";
             // 
+            // BackBtn
+            // 
+            BackBtn.Location = new Point(491, 93);
+            BackBtn.Name = "BackBtn";
+            BackBtn.Size = new Size(94, 29);
+            BackBtn.TabIndex = 12;
+            BackBtn.Text = "Geri";
+            BackBtn.UseVisualStyleBackColor = true;
+            BackBtn.Click += BackBtn_Click;
+            // 
+            // AddBtn
+            // 
+            AddBtn.Location = new Point(491, 218);
+            AddBtn.Name = "AddBtn";
+            AddBtn.Size = new Size(94, 28);
+            AddBtn.TabIndex = 13;
+            AddBtn.Text = "Ekle";
+            AddBtn.UseVisualStyleBackColor = true;
+            AddBtn.Click += AddBtn_Click;
+            // 
             // PersonAddFRM
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1073, 641);
+            ClientSize = new Size(1710, 641);
+            Controls.Add(AddBtn);
+            Controls.Add(BackBtn);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(DepartmentTxt);
+            Controls.Add(LastNameTxt);
+            Controls.Add(JobTitleTxt);
+            Controls.Add(FirstNameTxt);
+            Controls.Add(EMailTxt);
+            Controls.Add(PhoneNumberTxt);
             Name = "PersonAddFRM";
             Text = "PersonAddFRM";
             ResumeLayout(false);
@@ -163,17 +187,19 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
+        public TextBox PhoneNumberTxt;
+        public TextBox EMailTxt;
+        public TextBox FirstNameTxt;
+        public TextBox JobTitleTxt;
+        public TextBox LastNameTxt;
+        public TextBox DepartmentTxt;
         private Label label1;
         private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;
         private Label label6;
+        private Button BackBtn;
+        private Button AddBtn;
     }
 }

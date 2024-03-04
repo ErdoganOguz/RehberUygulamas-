@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Entities
 {
-    public class Department: BaseEntity
+    public class Department : BaseEntity
     {
+      
         public string DepartmentName { get; set; }
     }
 }
