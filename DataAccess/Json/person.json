@@ -53,15 +53,38 @@
     "Id": 0,
     "IsDeleted": false,
     "CreateDate": "2024-03-05T11:01:11.391118+03:00"
+  },
+  {
+    "FirstName": "Rıdvan ",
+    "LastName": "Ayaz",
+    "DepartmentId": 2,
+    "JobTitleId": 1,
+    "Number": "222",
+    "EmailAdress": "rrr",
+    "Id": 0,
+    "IsDeleted": false,
+    "CreateDate": "2024-03-05T11:01:54.1831509+03:00"
+  },
+  {
+    "FirstName": "osman",
+    "LastName": "veli",
+    "DepartmentId": 1,
+    "JobTitleId": 2,
+    "Number": "1111",
+    "EmailAdress": "wwqw",
+    "Id": 0,
+    "IsDeleted": false,
+    "CreateDate": "2024-03-05T11:37:36.8433257+03:00"
+  },
+  {
+    "FirstName": "Gürkan",
+    "LastName": "Tuna",
+    "DepartmentId": 14,
+    "JobTitleId": 2,
+    "Number": "2222",
+    "EmailAdress": "WWW",
+    "Id": 0,
+    "IsDeleted": false,
+    "CreateDate": "2024-03-05T11:39:25.6681581+03:00"
   }
-,{
-  "FirstName": "Rıdvan ",
-  "LastName": "Ayaz",
-  "DepartmentId": 2,
-  "JobTitleId": 1,
-  "Number": "222",
-  "EmailAdress": "rrr",
-  "Id": 0,
-  "IsDeleted": false,
-  "CreateDate": "2024-03-05T11:01:54.1831509+03:00"
-}]
+]

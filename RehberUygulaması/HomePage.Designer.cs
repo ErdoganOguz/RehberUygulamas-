@@ -39,12 +39,12 @@
             PersonListDgw.Location = new Point(12, 12);
             PersonListDgw.Name = "PersonListDgw";
             PersonListDgw.RowHeadersWidth = 51;
-            PersonListDgw.Size = new Size(1126, 873);
+            PersonListDgw.Size = new Size(1178, 885);
             PersonListDgw.TabIndex = 0;
             // 
             // PersonAddBtn
             // 
-            PersonAddBtn.Location = new Point(1234, 707);
+            PersonAddBtn.Location = new Point(1296, 868);
             PersonAddBtn.Name = "PersonAddBtn";
             PersonAddBtn.Size = new Size(94, 29);
             PersonAddBtn.TabIndex = 1;

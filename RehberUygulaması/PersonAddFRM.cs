@@ -35,52 +35,17 @@ namespace RehberUygulaması
 
         public void AddBtn_Click(object sender, EventArgs e)
         {
-            Add();
-        }
-
-        public void Add()
-        {
             try
             {
-                var person = new Person()
-                {
-                    FirstName = FirstNameTxt.Text,
-                    LastName = LastNameTxt.Text,
-                    DepartmentId = Convert.ToInt16(DepartmentTxt.Text),
-                    JobTitleId = Convert.ToInt16(JobTitleTxt.Text),
-                    Number = PhoneNumberTxt.Text,
-                    EmailAdress = EMailTxt.Text,
-                    CreateDate = DateTime.Now,
-                    IsDeleted = false
-                };
-
-
-                List<Person> data = efPersonDal.JsonList();
-
-                string fileName = "C:\\Users\\oğuz\\source\\repos\\RehberUygulaması\\DataAccess\\Json\\person.json";
-
-                var oldData = JsonConvert.SerializeObject(data , Formatting.Indented);
-                var personJson = JsonConvert.SerializeObject(person , Formatting.Indented);
-                oldData = RemoveSquareBrackets(oldData);
-                File.WriteAllText(fileName, " ");
-                File.WriteAllText(fileName,"["+ oldData +","+ personJson +"]");
-               
-
-
-
+                efPersonDal.personAdd(FirstNameTxt.Text, LastNameTxt.Text, Convert.ToInt32(DepartmentTxt.Text), Convert.ToInt16(JobTitleTxt.Text), PhoneNumberTxt.Text, EMailTxt.Text);
+                MessageBox.Show("Kişi Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Bir Hata Oluştu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-        static string RemoveSquareBrackets(string input)
-        {
-            if (input.StartsWith("[") && input.EndsWith("]"))
-            {
-                input = input.Substring(1, input.Length - 2);
-            }
-            return input;
-        }
+
+
     }
 }
