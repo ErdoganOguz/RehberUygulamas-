@@ -8,6 +8,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Text.Json;
@@ -54,17 +55,18 @@ namespace RehberUygulaması
                 };
                 
                 var personJson = JsonConvert.SerializeObject(person, Formatting.Indented);
+                efPersonDal.JsonList();
                 
                 string fileName = "C:\\Users\\oğuz\\source\\repos\\RehberUygulaması\\DataAccess\\Json\\person.json";
-                File.WriteAllText(fileName, personJson);
+                var data = File.ReadAllText(fileName);
+                File.WriteAllText(fileName, data+ personJson);
 
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Bir Hata Oluştu" , MessageBoxButtons.OK,MessageBoxIcon.Warning);
-            }
-            
+            }            
         }
     }
 }

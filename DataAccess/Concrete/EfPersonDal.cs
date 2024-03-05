@@ -2,6 +2,8 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
+using System.Diagnostics.PerformanceData;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,17 +15,18 @@ namespace DataAccess.Concrete
     public class EfPersonDal : Person
     {
 
-        
+
         public List<Person> JsonList()
         {
             List<Person> JsonModelList = null;
 
             try
             {
+
                 string fileName = "C:\\Users\\oğuz\\source\\repos\\RehberUygulaması\\DataAccess\\Json\\person.json";
                 dynamic JsonText = File.ReadAllText(fileName);
                 JsonModelList = JsonConvert.DeserializeObject<List<Person>>(JsonText);
-              
+
 
             }
             catch (Exception ex)
@@ -32,12 +35,7 @@ namespace DataAccess.Concrete
             }
             return JsonModelList;
         }
-
-        public Person Add()
-        {
-           
-            return Add();
-        }
+      
 
     }
 }

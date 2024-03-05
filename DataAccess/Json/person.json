@@ -1,5 +1,6 @@
 [
   {
+    "Id": 1,
     "FirstName": "Oğuz",
     "LastName": "Erdoğan",
     "DepartmentId": 1,
@@ -8,6 +9,7 @@
     "EmailAdress": "dffd"
   },
   {
+    "Id": 2,
     "FirstName": "Dilara",
     "LastName": "Dokuyucu",
     "DepartmentId": 1,
@@ -17,6 +19,7 @@
   },
 
   {
+    "Id": 3,
     "FirstName": "Ali",
     "LastName": "Veli",
     "DepartmentId": 2,
@@ -24,5 +27,5 @@
     "Number": "55566665856",
     "EmailAdress": "dffd"
   }
-  
+
 ]
