@@ -21,8 +21,6 @@ namespace RehberUygulaması
 
         public void HomePage_Load(object sender, EventArgs e)
         {
-
-            efPersonDal.JsonList();
             PersonListDgw.DataSource = efPersonDal.JsonList();
 
         }

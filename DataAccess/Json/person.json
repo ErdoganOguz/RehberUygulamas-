@@ -1,31 +1,67 @@
 [
   {
-    "Id": 1,
     "FirstName": "Oğuz",
     "LastName": "Erdoğan",
     "DepartmentId": 1,
     "JobTitleId": 1,
     "Number": "55566665856",
-    "EmailAdress": "dffd"
+    "EmailAdress": "dffd",
+    "Id": 1,
+    "IsDeleted": false,
+    "CreateDate": "0001-01-01T00:00:00"
   },
   {
-    "Id": 2,
     "FirstName": "Dilara",
     "LastName": "Dokuyucu",
     "DepartmentId": 1,
     "JobTitleId": 2,
     "Number": "55566665856",
-    "EmailAdress": "dffd"
+    "EmailAdress": "dffd",
+    "Id": 2,
+    "IsDeleted": false,
+    "CreateDate": "0001-01-01T00:00:00"
   },
-
   {
-    "Id": 3,
     "FirstName": "Ali",
     "LastName": "Veli",
     "DepartmentId": 2,
     "JobTitleId": 7,
     "Number": "55566665856",
-    "EmailAdress": "dffd"
+    "EmailAdress": "dffd",
+    "Id": 3,
+    "IsDeleted": false,
+    "CreateDate": "0001-01-01T00:00:00"
+  },
+  {
+    "FirstName": "q",
+    "LastName": "w",
+    "DepartmentId": 1,
+    "JobTitleId": 2,
+    "Number": "333",
+    "EmailAdress": "ff",
+    "Id": 0,
+    "IsDeleted": false,
+    "CreateDate": "2024-03-05T10:43:11.6442867+03:00"
+  },
+  {
+    "FirstName": "Ahmet ",
+    "LastName": "Vatasever",
+    "DepartmentId": 1,
+    "JobTitleId": 2,
+    "Number": "5554465676",
+    "EmailAdress": "www",
+    "Id": 0,
+    "IsDeleted": false,
+    "CreateDate": "2024-03-05T11:01:11.391118+03:00"
   }
-
-]
+,{
+  "FirstName": "Rıdvan ",
+  "LastName": "Ayaz",
+  "DepartmentId": 2,
+  "JobTitleId": 1,
+  "Number": "222",
+  "EmailAdress": "rrr",
+  "Id": 0,
+  "IsDeleted": false,
+  "CreateDate": "2024-03-05T11:01:54.1831509+03:00"
+}]

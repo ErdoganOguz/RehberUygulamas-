@@ -53,20 +53,34 @@ namespace RehberUygulaması
                     CreateDate = DateTime.Now,
                     IsDeleted = false
                 };
-                
-                var personJson = JsonConvert.SerializeObject(person, Formatting.Indented);
-                efPersonDal.JsonList();
-                
+
+
+                List<Person> data = efPersonDal.JsonList();
+
                 string fileName = "C:\\Users\\oğuz\\source\\repos\\RehberUygulaması\\DataAccess\\Json\\person.json";
-                var data = File.ReadAllText(fileName);
-                File.WriteAllText(fileName, data+ personJson);
+
+                var oldData = JsonConvert.SerializeObject(data , Formatting.Indented);
+                var personJson = JsonConvert.SerializeObject(person , Formatting.Indented);
+                oldData = RemoveSquareBrackets(oldData);
+                File.WriteAllText(fileName, " ");
+                File.WriteAllText(fileName,"["+ oldData +","+ personJson +"]");
+               
+
 
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Bir Hata Oluştu" , MessageBoxButtons.OK,MessageBoxIcon.Warning);
-            }            
+                MessageBox.Show(ex.Message, "Bir Hata Oluştu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+        static string RemoveSquareBrackets(string input)
+        {
+            if (input.StartsWith("[") && input.EndsWith("]"))
+            {
+                input = input.Substring(1, input.Length - 2);
+            }
+            return input;
         }
     }
 }

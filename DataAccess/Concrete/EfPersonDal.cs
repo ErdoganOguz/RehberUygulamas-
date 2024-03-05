@@ -35,7 +35,5 @@ namespace DataAccess.Concrete
             }
             return JsonModelList;
         }
-      
-
     }
 }
