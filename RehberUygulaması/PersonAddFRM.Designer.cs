@@ -42,6 +42,7 @@
             BackBtn = new Button();
             AddBtn = new Button();
             PhoneNumberTxt = new MaskedTextBox();
+            JobTitleCombo = new ComboBox();
             SuspendLayout();
             // 
             // EMailTxt
@@ -161,11 +162,20 @@
             PhoneNumberTxt.Size = new Size(169, 27);
             PhoneNumberTxt.TabIndex = 14;
             // 
+            // JobTitleCombo
+            // 
+            JobTitleCombo.FormattingEnabled = true;
+            JobTitleCombo.Location = new Point(179, 385);
+            JobTitleCombo.Name = "JobTitleCombo";
+            JobTitleCombo.Size = new Size(169, 28);
+            JobTitleCombo.TabIndex = 16;
+            // 
             // PersonAddFRM
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1710, 641);
+            Controls.Add(JobTitleCombo);
             Controls.Add(PhoneNumberTxt);
             Controls.Add(AddBtn);
             Controls.Add(BackBtn);
@@ -182,6 +192,7 @@
             Controls.Add(EMailTxt);
             Name = "PersonAddFRM";
             Text = "PersonAddFRM";
+            Load += PersonAddFRM_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -201,5 +212,6 @@
         private Button BackBtn;
         private Button AddBtn;
         private MaskedTextBox PhoneNumberTxt;
+        private ComboBox JobTitleCombo;
     }
 }

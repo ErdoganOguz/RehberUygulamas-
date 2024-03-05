@@ -16,6 +16,7 @@ namespace RehberUygulaması
             InitializeComponent();
         }
         EfPersonDal efPersonDal = new EfPersonDal();
+        PersonAddFRM personAddFRM = new PersonAddFRM();
 
 
 
@@ -45,6 +46,11 @@ namespace RehberUygulaması
             JobTitleAddFRM FRM = new JobTitleAddFRM();
             FRM.ShowDialog();
             this.Hide();
+        }
+
+        private void TestBtn_Click(object sender, EventArgs e)
+        {
+            efPersonDal.JobTitleFilter();
         }
     }
 }

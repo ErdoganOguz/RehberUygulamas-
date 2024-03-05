@@ -46,6 +46,41 @@ namespace RehberUygulaması
             }
         }
 
+        public void PersonAddFRM_Load(object sender, EventArgs e)
+        {
+            JobTitleFilter();
+          
+        }
+        public void JobTitleFilter()
+        {
+            try
+            {
+                string fileName = "C:\\Users\\oğuz\\source\\repos\\RehberUygulaması\\DataAccess\\Json\\JobTitle.json";
+                string json;
+                using (StreamReader r = new StreamReader(fileName))
+                {
+                    json = r.ReadToEnd();
+                }
 
+
+                JArray dataArray = JArray.Parse(json);
+
+                // string JobTitleName = dataArray["JobTitleName"].ToString();
+
+                foreach (JObject data in dataArray)
+                {
+                    string JobTitleName = data["JobTitleName"].ToString();
+                    JobTitleCombo.Items.Add(JobTitleName);
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Bir Hata Oluştu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+          ;
+        }
     }
 }

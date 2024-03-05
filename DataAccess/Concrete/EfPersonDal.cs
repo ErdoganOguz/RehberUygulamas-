@@ -1,5 +1,6 @@
 ﻿using DataAccess.Entities;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Metrics;
@@ -40,7 +41,7 @@ namespace DataAccess.Concrete
             {
                 var person = new Person()
                 {
-                    Id = JsonList().Count()+1,
+                    Id = JsonList().Count() + 1,
                     FirstName = firstname,
                     LastName = lastname,
                     DepartmentId = departmentid,
@@ -71,6 +72,35 @@ namespace DataAccess.Concrete
             }
             return input;
         }
-        
+        public void JobTitleFilter()
+        {
+            try
+            {
+                string fileName = "C:\\Users\\oğuz\\source\\repos\\RehberUygulaması\\DataAccess\\Json\\JobTitle.json";
+                string json;
+                using (StreamReader r = new StreamReader(fileName))
+                {
+                    json = r.ReadToEnd();
+                }
+
+
+                JArray dataArray = JArray.Parse(json);
+
+                // string JobTitleName = dataArray["JobTitleName"].ToString();
+
+                foreach (JObject data in dataArray)
+                {
+                    string JobTitleName = data["JobTitleName"].ToString();
+                    MessageBox.Show(Convert.ToString(JobTitleName));
+                }
+                
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Bir Hata Oluştu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+             ;
+        }
     }
 }

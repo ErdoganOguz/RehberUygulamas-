@@ -4,5 +4,16 @@
     "Id": 1,
     "IsDeleted": false,
     "CreateDate": "2024-03-05T14:01:00.2437019+03:00"
+  },
+  {
+    "JobTitleName": "Lider",
+    "Id": 2,
+    "IsDeleted": false,
+    "CreateDate": "2024-03-05T14:21:06.4971761+03:00"
   }
-]
+,{
+  "JobTitleName": "Stajyer",
+  "Id": 3,
+  "IsDeleted": false,
+  "CreateDate": "2024-03-05T16:33:17.4411453+03:00"
+}]
