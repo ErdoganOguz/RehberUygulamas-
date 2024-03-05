@@ -30,6 +30,7 @@
         {
             PersonListDgw = new DataGridView();
             PersonAddBtn = new Button();
+            DepartmentAddBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)PersonListDgw).BeginInit();
             SuspendLayout();
             // 
@@ -46,17 +47,28 @@
             // 
             PersonAddBtn.Location = new Point(1296, 868);
             PersonAddBtn.Name = "PersonAddBtn";
-            PersonAddBtn.Size = new Size(94, 29);
+            PersonAddBtn.Size = new Size(147, 29);
             PersonAddBtn.TabIndex = 1;
             PersonAddBtn.Text = "Kişi Ekle";
             PersonAddBtn.UseVisualStyleBackColor = true;
             PersonAddBtn.Click += PersonAddBtn_Click;
+            // 
+            // DepartmentAddBtn
+            // 
+            DepartmentAddBtn.Location = new Point(1296, 816);
+            DepartmentAddBtn.Name = "DepartmentAddBtn";
+            DepartmentAddBtn.Size = new Size(147, 29);
+            DepartmentAddBtn.TabIndex = 2;
+            DepartmentAddBtn.Text = "Departman Ekle";
+            DepartmentAddBtn.UseVisualStyleBackColor = true;
+            DepartmentAddBtn.Click += DepartmentAddBtn_Click;
             // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1902, 1033);
+            Controls.Add(DepartmentAddBtn);
             Controls.Add(PersonAddBtn);
             Controls.Add(PersonListDgw);
             Name = "HomePage";
@@ -73,5 +85,6 @@
 
         public DataGridView PersonListDgw;
         private Button PersonAddBtn;
+        private Button DepartmentAddBtn;
     }
 }

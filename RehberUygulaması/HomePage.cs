@@ -33,6 +33,11 @@ namespace RehberUygulaması
 
         }
 
-       
+        private void DepartmentAddBtn_Click(object sender, EventArgs e)
+        {
+            DepartmentAddFRM FRM = new DepartmentAddFRM();
+            FRM.ShowDialog();
+            this.Hide();
+        }
     }
 }

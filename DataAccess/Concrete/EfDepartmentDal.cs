@@ -2,29 +2,25 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics.Metrics;
-using System.Diagnostics.PerformanceData;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
-
 
 namespace DataAccess.Concrete
 {
-    public class EfPersonDal : Person
+    public class EfDepartmentDal : Department
     {
-        string fileName = "C:\\Users\\oğuz\\source\\repos\\RehberUygulaması\\DataAccess\\Json\\person.json";
+        string fileName = "C:\\Users\\oğuz\\source\\repos\\RehberUygulaması\\DataAccess\\Json\\Depeartment.json";
 
 
-        public List<Person> JsonList()
+        public List<Department> JsonList()
         {
-            List<Person> JsonModelList = null;
+            List<Department> JsonModelList = null;
 
             try
             {
                 dynamic JsonText = File.ReadAllText(fileName);
-                JsonModelList = JsonConvert.DeserializeObject<List<Person>>(JsonText);
+                JsonModelList = JsonConvert.DeserializeObject<List<Department>>(JsonText);
 
 
             }
@@ -34,28 +30,24 @@ namespace DataAccess.Concrete
             }
             return JsonModelList;
         }
-        public void personAdd(string firstname, string lastname, int departmentid, int jobtitleid, string number, string email)
+        public void departmentAdd(string departmentName)
         {
             try
             {
-                var person = new Person()
+                var department = new Department()
                 {
-                    Id = JsonList().Count()+1,
-                    FirstName = firstname,
-                    LastName = lastname,
-                    DepartmentId = departmentid,
-                    JobTitleId = jobtitleid,
-                    Number = number,
-                    EmailAdress = email,
+
+                    Id = JsonList().Count() + 1,
+                    DepartmentName = departmentName,
                     CreateDate = DateTime.Now,
                     IsDeleted = false
                 };
-                List<Person> data = JsonList();
+                List<Department> data = JsonList();
                 var oldData = JsonConvert.SerializeObject(data, Formatting.Indented);
-                var personJson = JsonConvert.SerializeObject(person, Formatting.Indented);
+                var departmentJson = JsonConvert.SerializeObject(department, Formatting.Indented);
                 oldData = RemoveSquareBrackets(oldData);
                 File.WriteAllText(fileName, " ");
-                File.WriteAllText(fileName, "[" + oldData + "," + personJson + "]");
+                File.WriteAllText(fileName, "[" + oldData + "," + departmentJson + "]");
                 RemoveSquareBrackets(fileName);
             }
             catch (Exception ex)
@@ -71,6 +63,7 @@ namespace DataAccess.Concrete
             }
             return input;
         }
-        
     }
+   
+
 }

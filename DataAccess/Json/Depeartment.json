@@ -1,0 +1,14 @@
+[
+  null,
+  {
+    "DepartmentName": "Dijital Üretim",
+    "Id": 1,
+    "IsDeleted": false,
+    "CreateDate": "2024-03-05T12:58:39.345636+03:00"
+  }
+,{
+  "DepartmentName": "İnsan Kaynakları",
+  "Id": 3,
+  "IsDeleted": false,
+  "CreateDate": "2024-03-05T13:02:29.0408119+03:00"
+}]
