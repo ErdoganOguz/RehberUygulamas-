@@ -31,6 +31,7 @@
             PersonListDgw = new DataGridView();
             PersonAddBtn = new Button();
             DepartmentAddBtn = new Button();
+            JobTiitleAddBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)PersonListDgw).BeginInit();
             SuspendLayout();
             // 
@@ -63,11 +64,22 @@
             DepartmentAddBtn.UseVisualStyleBackColor = true;
             DepartmentAddBtn.Click += DepartmentAddBtn_Click;
             // 
+            // JobTiitleAddBtn
+            // 
+            JobTiitleAddBtn.Location = new Point(1296, 770);
+            JobTiitleAddBtn.Name = "JobTiitleAddBtn";
+            JobTiitleAddBtn.Size = new Size(147, 29);
+            JobTiitleAddBtn.TabIndex = 3;
+            JobTiitleAddBtn.Text = "Ünvan Ekle";
+            JobTiitleAddBtn.UseVisualStyleBackColor = true;
+            JobTiitleAddBtn.Click += JobTiitleAddBtn_Click;
+            // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1902, 1033);
+            Controls.Add(JobTiitleAddBtn);
             Controls.Add(DepartmentAddBtn);
             Controls.Add(PersonAddBtn);
             Controls.Add(PersonListDgw);
@@ -86,5 +98,6 @@
         public DataGridView PersonListDgw;
         private Button PersonAddBtn;
         private Button DepartmentAddBtn;
+        private Button JobTiitleAddBtn;
     }
 }

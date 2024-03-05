@@ -39,5 +39,12 @@ namespace RehberUygulaması
             FRM.ShowDialog();
             this.Hide();
         }
+
+        private void JobTiitleAddBtn_Click(object sender, EventArgs e)
+        {
+            JobTitleAddFRM FRM = new JobTitleAddFRM();
+            FRM.ShowDialog();
+            this.Hide();
+        }
     }
 }

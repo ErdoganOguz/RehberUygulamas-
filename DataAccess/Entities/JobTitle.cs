@@ -8,7 +8,6 @@ namespace DataAccess.Entities
 {
     public class JobTitle:BaseEntity
     {
-
-        public string jobTitle { get; set; }
+        public string JobTitleName { get; set; }
     }
 }
