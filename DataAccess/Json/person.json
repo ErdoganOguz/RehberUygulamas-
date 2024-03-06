@@ -25,7 +25,7 @@
     "FirstName": "Ali",
     "LastName": "Veli",
     "DepartmentId": 2,
-    "JobTitleId": 7,
+    "JobTitleId": 4,
     "Number": "55566665856",
     "EmailAdress": "dffd",
     "Id": 3,
@@ -79,7 +79,7 @@
   {
     "FirstName": "Gürkan",
     "LastName": "Tuna",
-    "DepartmentId": 14,
+    "DepartmentId": 1,
     "JobTitleId": 2,
     "Number": "2222",
     "EmailAdress": "WWW",
@@ -101,7 +101,7 @@
   {
     "FirstName": "dd",
     "LastName": "qq",
-    "DepartmentId": 11,
+    "DepartmentId": 1,
     "JobTitleId": 1,
     "Number": "2",
     "EmailAdress": "www",
@@ -130,15 +130,26 @@
     "Id": 12,
     "IsDeleted": false,
     "CreateDate": "2024-03-06T08:49:32.1952203+03:00"
+  },
+  {
+    "FirstName": "ali",
+    "LastName": "mehmet",
+    "DepartmentId": 1,
+    "JobTitleId": 2,
+    "Number": "(565) 566-6555",
+    "EmailAdress": "qqq",
+    "Id": 13,
+    "IsDeleted": false,
+    "CreateDate": "2024-03-06T14:35:49.6497739+03:00"
   }
 ,{
-  "FirstName": "ali",
-  "LastName": "mehmet",
-  "DepartmentId": 1,
-  "JobTitleId": 2,
-  "Number": "(565) 566-6555",
-  "EmailAdress": "qqq",
-  "Id": 13,
+  "FirstName": "ww",
+  "LastName": "e",
+  "DepartmentId": 2,
+  "JobTitleId": 1,
+  "Number": "(555) 555-5555",
+  "EmailAdress": "ww",
+  "Id": 14,
   "IsDeleted": false,
-  "CreateDate": "2024-03-06T14:35:49.6497739+03:00"
+  "CreateDate": "2024-03-06T17:20:01.9519366+03:00"
 }]

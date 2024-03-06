@@ -35,7 +35,7 @@ namespace DataAccess.Concrete
             }
             return JsonModelList;
         }
-        public void personAdd(string firstname, string lastname, int departmentid, string jobtitleid, string number, string email)
+        public void personAdd(string firstname, string lastname, string departmentid, string jobtitleid, string number, string email)
         {
             try
             {
@@ -44,7 +44,7 @@ namespace DataAccess.Concrete
                     Id = JsonList().Count() + 1,
                     FirstName = firstname,
                     LastName = lastname,
-                    DepartmentId = departmentid,
+                    DepartmentId = Convert.ToInt16(departmentid),
                     JobTitleId = Convert.ToInt16( jobtitleid),
                     Number = number,
                     EmailAdress = email,

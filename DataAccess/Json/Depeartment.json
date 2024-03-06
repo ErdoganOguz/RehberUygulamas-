@@ -7,8 +7,13 @@
   },
   {
     "DepartmentName": "İnsan Kaynakları",
-    "Id": 3,
+    "Id": 2,
     "IsDeleted": false,
     "CreateDate": "2024-03-05T13:02:29.0408119+03:00"
   }
-]
+,{
+  "DepartmentName": "Arge",
+  "Id": 3,
+  "IsDeleted": false,
+  "CreateDate": "2024-03-06T17:22:40.8536709+03:00"
+}]

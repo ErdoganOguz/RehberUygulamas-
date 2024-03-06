@@ -1,5 +1,6 @@
 ﻿using DataAccess.Entities;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace DataAccess.Concrete
     public class EfDepartmentDal : Department
     {
         string fileName = "C:\\Users\\oğuz\\source\\repos\\RehberUygulaması\\DataAccess\\Json\\Depeartment.json";
-
+        string DepartmentId;
 
         public List<Department> JsonList()
         {
@@ -62,6 +63,80 @@ namespace DataAccess.Concrete
                 input = input.Substring(1, input.Length - 2);
             }
             return input;
+        }
+
+        public string departmentFilter(string comboSelect)
+        {
+            try
+            {
+
+                string json;
+                using (StreamReader r = new StreamReader(fileName))
+                {
+                    json = r.ReadToEnd();
+                }
+
+
+                JArray dataArray = JArray.Parse(json);
+
+                // string JobTitleName = dataArray["JobTitleName"].ToString();
+
+                foreach (JObject data in dataArray)
+                {
+
+
+                    string JobTitleName = data["DepartmentName"].ToString();
+                    if (JobTitleName == comboSelect)
+                    {
+
+
+
+                        DepartmentId = data["Id"].ToString();
+
+                        return DepartmentId;
+
+
+
+
+                    }
+                    //MessageBox.Show(Convert.ToString(JobTitleName));
+
+                }
+                return "Eşleşen iş pozisyonu bulunamadı ";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Bir Hata Oluştu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return null;
+            }
+
+        }
+        public void DepartmentComboList(System.Windows.Forms.ComboBox comboBox)
+        {
+            
+            comboBox.Items.Clear();
+
+            try
+            {
+
+                string json;
+                using (StreamReader r = new StreamReader(fileName))
+                {
+                    json = r.ReadToEnd();
+                }
+
+                JArray dataArray = JArray.Parse(json);
+
+                foreach (JObject data in dataArray)
+                {
+                    string DepartmentName = data["DepartmentName"].ToString();
+                    comboBox.Items.Add(DepartmentName);
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Bir Hata Oluştu", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
+            }
         }
     }
    

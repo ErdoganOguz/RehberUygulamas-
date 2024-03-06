@@ -32,7 +32,6 @@
             PersonAddBtn = new Button();
             DepartmentAddBtn = new Button();
             JobTiitleAddBtn = new Button();
-            TestBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)PersonListDgw).BeginInit();
             SuspendLayout();
             // 
@@ -75,22 +74,11 @@
             JobTiitleAddBtn.UseVisualStyleBackColor = true;
             JobTiitleAddBtn.Click += JobTiitleAddBtn_Click;
             // 
-            // TestBtn
-            // 
-            TestBtn.Location = new Point(1331, 335);
-            TestBtn.Name = "TestBtn";
-            TestBtn.Size = new Size(95, 46);
-            TestBtn.TabIndex = 4;
-            TestBtn.Text = "Test";
-            TestBtn.UseVisualStyleBackColor = true;
-            TestBtn.Click += TestBtn_Click;
-            // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1902, 1033);
-            Controls.Add(TestBtn);
             Controls.Add(JobTiitleAddBtn);
             Controls.Add(DepartmentAddBtn);
             Controls.Add(PersonAddBtn);
@@ -111,6 +99,5 @@
         private Button PersonAddBtn;
         private Button DepartmentAddBtn;
         private Button JobTiitleAddBtn;
-        private Button TestBtn;
     }
 }

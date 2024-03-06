@@ -49,9 +49,6 @@ namespace RehberUygulaması
             this.Hide();
         }
 
-        private void TestBtn_Click(object sender, EventArgs e)
-        {
-            efJobTitle.JobTitleTestList();
-        }
+     
     }
 }

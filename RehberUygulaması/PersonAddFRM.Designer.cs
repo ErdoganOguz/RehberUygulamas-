@@ -42,6 +42,7 @@
             AddBtn = new Button();
             PhoneNumberTxt = new MaskedTextBox();
             JobTitleCombo = new ComboBox();
+            DepartmentCombo = new ComboBox();
             SuspendLayout();
             // 
             // EMailTxt
@@ -67,7 +68,7 @@
             // 
             // DepartmentTxt
             // 
-            DepartmentTxt.Location = new Point(179, 135);
+            DepartmentTxt.Location = new Point(902, 262);
             DepartmentTxt.Name = "DepartmentTxt";
             DepartmentTxt.Size = new Size(169, 27);
             DepartmentTxt.TabIndex = 3;
@@ -162,11 +163,20 @@
             JobTitleCombo.Size = new Size(169, 28);
             JobTitleCombo.TabIndex = 16;
             // 
+            // DepartmentCombo
+            // 
+            DepartmentCombo.FormattingEnabled = true;
+            DepartmentCombo.Location = new Point(179, 135);
+            DepartmentCombo.Name = "DepartmentCombo";
+            DepartmentCombo.Size = new Size(169, 28);
+            DepartmentCombo.TabIndex = 17;
+            // 
             // PersonAddFRM
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1710, 641);
+            Controls.Add(DepartmentCombo);
             Controls.Add(JobTitleCombo);
             Controls.Add(PhoneNumberTxt);
             Controls.Add(AddBtn);
@@ -203,5 +213,6 @@
         private Button AddBtn;
         private MaskedTextBox PhoneNumberTxt;
         private ComboBox JobTitleCombo;
+        private ComboBox DepartmentCombo;
     }
 }

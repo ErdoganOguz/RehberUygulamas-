@@ -12,7 +12,8 @@ namespace DataAccess.Concrete
     public class EfJobTitleDal : JobTitle
     {
         string fileName = "C:\\Users\\oğuz\\source\\repos\\RehberUygulaması\\DataAccess\\Json\\JobTitle.json";
-        string JobTitleId;
+
+
 
         public List<JobTitle> JsonList()
         {
@@ -65,39 +66,12 @@ namespace DataAccess.Concrete
             return input;
         }
 
-        public void JobTitleTestList()
-        {
-            try
-            {
-                string json;
-                using (StreamReader r = new StreamReader(fileName))
-                {
-                    json = r.ReadToEnd();
-                }
-
-
-                JArray dataArray = JArray.Parse(json);
-
-                //string JobTitleName = dataArray["JobTitleName"].ToString();
-
-                foreach (JObject data in dataArray)
-                {
-                    string JobTitleName = data["JobTitleName"].ToString();
-                    MessageBox.Show(Convert.ToString(JobTitleName));
-                }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Bir Hata Oluştu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-
-        }
+       
         public string JobTitleFilter(string comboSelect)
         {
             try
             {
-               
+                string JobTitleId;
                 string json;
                 using (StreamReader r = new StreamReader(fileName))
                 {
@@ -116,21 +90,21 @@ namespace DataAccess.Concrete
                     string JobTitleName = data["JobTitleName"].ToString();
                     if (JobTitleName == comboSelect)
                     {
-                       
 
 
-                            JobTitleId = data["Id"].ToString();
 
-                            return JobTitleId;
+                        JobTitleId = data["Id"].ToString();
 
-                        
+                        return JobTitleId;
 
-                        
+
+
+
                     }
                     //MessageBox.Show(Convert.ToString(JobTitleName));
-                  
+
                 }
-               return "Eşleşen iş pozisyonu bulunamadı ";
+                return "Eşleşen iş pozisyonu bulunamadı ";
             }
             catch (Exception ex)
             {
@@ -138,6 +112,35 @@ namespace DataAccess.Concrete
                 return null;
             }
 
+        }
+
+       
+        public void JobTitleComboList(System.Windows.Forms.ComboBox comboBox)
+        {
+            // ComboBox'ı temizle
+            comboBox.Items.Clear();
+
+            try
+            {
+               
+                string json;
+                using (StreamReader r = new StreamReader(fileName))
+                {
+                    json = r.ReadToEnd();
+                }
+
+                JArray dataArray = JArray.Parse(json);
+
+                foreach (JObject data in dataArray)
+                {
+                    string jobTitleName = data["JobTitleName"].ToString();
+                    comboBox.Items.Add(jobTitleName);
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Bir Hata Oluştu", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
+            }
         }
     }
 }
