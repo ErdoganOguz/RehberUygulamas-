@@ -43,6 +43,7 @@
             AddBtn = new Button();
             PhoneNumberTxt = new MaskedTextBox();
             JobTitleCombo = new ComboBox();
+            TestBtn = new Button();
             SuspendLayout();
             // 
             // EMailTxt
@@ -139,7 +140,7 @@
             BackBtn.Location = new Point(491, 93);
             BackBtn.Name = "BackBtn";
             BackBtn.Size = new Size(94, 29);
-            BackBtn.TabIndex = 12;
+            BackBtn.TabIndex = 8;
             BackBtn.Text = "Geri";
             BackBtn.UseVisualStyleBackColor = true;
             BackBtn.Click += BackBtn_Click;
@@ -149,7 +150,7 @@
             AddBtn.Location = new Point(491, 218);
             AddBtn.Name = "AddBtn";
             AddBtn.Size = new Size(94, 28);
-            AddBtn.TabIndex = 13;
+            AddBtn.TabIndex = 7;
             AddBtn.Text = "Ekle";
             AddBtn.UseVisualStyleBackColor = true;
             AddBtn.Click += AddBtn_Click;
@@ -160,7 +161,7 @@
             PhoneNumberTxt.Mask = "(500) 000-0000";
             PhoneNumberTxt.Name = "PhoneNumberTxt";
             PhoneNumberTxt.Size = new Size(169, 27);
-            PhoneNumberTxt.TabIndex = 14;
+            PhoneNumberTxt.TabIndex = 5;
             // 
             // JobTitleCombo
             // 
@@ -170,11 +171,22 @@
             JobTitleCombo.Size = new Size(169, 28);
             JobTitleCombo.TabIndex = 16;
             // 
+            // TestBtn
+            // 
+            TestBtn.Location = new Point(885, 138);
+            TestBtn.Name = "TestBtn";
+            TestBtn.Size = new Size(94, 29);
+            TestBtn.TabIndex = 17;
+            TestBtn.Text = "button1";
+            TestBtn.UseVisualStyleBackColor = true;
+            TestBtn.Click += TestBtn_Click;
+            // 
             // PersonAddFRM
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1710, 641);
+            Controls.Add(TestBtn);
             Controls.Add(JobTitleCombo);
             Controls.Add(PhoneNumberTxt);
             Controls.Add(AddBtn);
@@ -213,5 +225,6 @@
         private Button AddBtn;
         private MaskedTextBox PhoneNumberTxt;
         private ComboBox JobTitleCombo;
+        private Button TestBtn;
     }
 }

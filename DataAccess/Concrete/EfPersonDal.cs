@@ -28,7 +28,7 @@ namespace DataAccess.Concrete
                 JsonModelList = JsonConvert.DeserializeObject<List<Person>>(JsonText);
 
 
-            }
+        }
             catch (Exception ex)
             {
                 MessageBox.Show("Hata oluştu: " + ex.Message);
@@ -58,6 +58,7 @@ namespace DataAccess.Concrete
                 File.WriteAllText(fileName, " ");
                 File.WriteAllText(fileName, "[" + oldData + "," + personJson + "]");
                 RemoveSquareBrackets(fileName);
+                MessageBox.Show("Kişi Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -71,36 +72,6 @@ namespace DataAccess.Concrete
                 input = input.Substring(1, input.Length - 2);
             }
             return input;
-        }
-        public void JobTitleFilter()
-        {
-            try
-            {
-                string fileName = "C:\\Users\\oğuz\\source\\repos\\RehberUygulaması\\DataAccess\\Json\\JobTitle.json";
-                string json;
-                using (StreamReader r = new StreamReader(fileName))
-                {
-                    json = r.ReadToEnd();
-                }
-
-
-                JArray dataArray = JArray.Parse(json);
-
-                // string JobTitleName = dataArray["JobTitleName"].ToString();
-
-                foreach (JObject data in dataArray)
-                {
-                    string JobTitleName = data["JobTitleName"].ToString();
-                    MessageBox.Show(Convert.ToString(JobTitleName));
-                }
-                
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Bir Hata Oluştu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-             ;
         }
     }
 }

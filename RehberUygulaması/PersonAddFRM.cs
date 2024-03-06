@@ -25,6 +25,7 @@ namespace RehberUygulaması
         }
 
         EfPersonDal efPersonDal = new EfPersonDal();
+        EfJobTitleDal efJobTitle = new EfJobTitleDal();
         Person person = new Person();
         private void BackBtn_Click(object sender, EventArgs e)
         {
@@ -38,7 +39,6 @@ namespace RehberUygulaması
             try
             {
                 efPersonDal.personAdd(FirstNameTxt.Text, LastNameTxt.Text, Convert.ToInt32(DepartmentTxt.Text), Convert.ToInt16(JobTitleTxt.Text), PhoneNumberTxt.Text, EMailTxt.Text);
-                MessageBox.Show("Kişi Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -48,10 +48,10 @@ namespace RehberUygulaması
 
         public void PersonAddFRM_Load(object sender, EventArgs e)
         {
-            JobTitleFilter();
-          
+            JobTitleComboList();
+
         }
-        public void JobTitleFilter()
+        public void JobTitleComboList()
         {
             try
             {
@@ -81,6 +81,11 @@ namespace RehberUygulaması
 
             }
           ;
+        }
+
+        private void TestBtn_Click(object sender, EventArgs e)
+        {
+            efJobTitle.JobTitleFilter(JobTitleCombo.Text);
         }
     }
 }

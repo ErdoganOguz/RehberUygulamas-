@@ -1,5 +1,6 @@
 ﻿using DataAccess.Entities;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,7 +39,7 @@ namespace DataAccess.Concrete
                 {
 
                     Id = JsonList().Count() + 1,
-                     JobTitleName = jobTitleName,
+                    JobTitleName = jobTitleName,
                     CreateDate = DateTime.Now,
                     IsDeleted = false
                 };
@@ -62,6 +63,78 @@ namespace DataAccess.Concrete
                 input = input.Substring(1, input.Length - 2);
             }
             return input;
+        }
+
+        public void JobTitleTestList()
+        {
+            try
+            {
+                string json;
+                using (StreamReader r = new StreamReader(fileName))
+                {
+                    json = r.ReadToEnd();
+                }
+
+
+                JArray dataArray = JArray.Parse(json);
+
+                //string JobTitleName = dataArray["JobTitleName"].ToString();
+
+                foreach (JObject data in dataArray)
+                {
+                    string JobTitleName = data["JobTitleName"].ToString();
+                    MessageBox.Show(Convert.ToString(JobTitleName));
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Bir Hata Oluştu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+        }
+        public void JobTitleFilter(string comboSelect)
+        {
+            try
+            {
+                string JobTitleId;
+                string json;
+                using (StreamReader r = new StreamReader(fileName))
+                {
+                    json = r.ReadToEnd();
+                }
+
+
+                JArray dataArray = JArray.Parse(json);
+
+                // string JobTitleName = dataArray["JobTitleName"].ToString();
+
+                foreach (JObject data in dataArray)
+                {
+
+
+                    string JobTitleName = data["JobTitleName"].ToString();
+                    if (JobTitleName == comboSelect)
+                    {
+                        foreach (JObject IdData in dataArray)
+                        {
+
+
+                            JobTitleId = data["Id"].ToString();
+
+                            MessageBox.Show(Convert.ToString(JobTitleId));
+
+                        }
+                    }
+                    //MessageBox.Show(Convert.ToString(JobTitleName));
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Bir Hata Oluştu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
         }
     }
 }

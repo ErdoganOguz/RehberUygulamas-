@@ -108,15 +108,26 @@
     "Id": 10,
     "IsDeleted": false,
     "CreateDate": "2024-03-05T12:09:57.8492791+03:00"
+  },
+  {
+    "FirstName": "emre",
+    "LastName": "mor",
+    "DepartmentId": 1,
+    "JobTitleId": 2,
+    "Number": "(545) 744-1777",
+    "EmailAdress": "qqq",
+    "Id": 11,
+    "IsDeleted": false,
+    "CreateDate": "2024-03-05T12:35:25.2726955+03:00"
   }
 ,{
-  "FirstName": "emre",
-  "LastName": "mor",
+  "FirstName": "a",
+  "LastName": "a",
   "DepartmentId": 1,
-  "JobTitleId": 2,
-  "Number": "(545) 744-1777",
-  "EmailAdress": "qqq",
-  "Id": 11,
+  "JobTitleId": 1,
+  "Number": "(555) 353-3353",
+  "EmailAdress": "dd",
+  "Id": 12,
   "IsDeleted": false,
-  "CreateDate": "2024-03-05T12:35:25.2726955+03:00"
+  "CreateDate": "2024-03-06T08:49:32.1952203+03:00"
 }]
