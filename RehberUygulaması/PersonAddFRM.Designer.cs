@@ -30,7 +30,6 @@
         {
             EMailTxt = new TextBox();
             FirstNameTxt = new TextBox();
-            JobTitleTxt = new TextBox();
             LastNameTxt = new TextBox();
             DepartmentTxt = new TextBox();
             label1 = new Label();
@@ -43,7 +42,6 @@
             AddBtn = new Button();
             PhoneNumberTxt = new MaskedTextBox();
             JobTitleCombo = new ComboBox();
-            TestBtn = new Button();
             SuspendLayout();
             // 
             // EMailTxt
@@ -59,13 +57,6 @@
             FirstNameTxt.Name = "FirstNameTxt";
             FirstNameTxt.Size = new Size(169, 27);
             FirstNameTxt.TabIndex = 1;
-            // 
-            // JobTitleTxt
-            // 
-            JobTitleTxt.Location = new Point(179, 173);
-            JobTitleTxt.Name = "JobTitleTxt";
-            JobTitleTxt.Size = new Size(169, 27);
-            JobTitleTxt.TabIndex = 4;
             // 
             // LastNameTxt
             // 
@@ -166,27 +157,16 @@
             // JobTitleCombo
             // 
             JobTitleCombo.FormattingEnabled = true;
-            JobTitleCombo.Location = new Point(179, 385);
+            JobTitleCombo.Location = new Point(179, 177);
             JobTitleCombo.Name = "JobTitleCombo";
             JobTitleCombo.Size = new Size(169, 28);
             JobTitleCombo.TabIndex = 16;
-            // 
-            // TestBtn
-            // 
-            TestBtn.Location = new Point(885, 138);
-            TestBtn.Name = "TestBtn";
-            TestBtn.Size = new Size(94, 29);
-            TestBtn.TabIndex = 17;
-            TestBtn.Text = "button1";
-            TestBtn.UseVisualStyleBackColor = true;
-            TestBtn.Click += TestBtn_Click;
             // 
             // PersonAddFRM
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1710, 641);
-            Controls.Add(TestBtn);
             Controls.Add(JobTitleCombo);
             Controls.Add(PhoneNumberTxt);
             Controls.Add(AddBtn);
@@ -199,7 +179,6 @@
             Controls.Add(label1);
             Controls.Add(DepartmentTxt);
             Controls.Add(LastNameTxt);
-            Controls.Add(JobTitleTxt);
             Controls.Add(FirstNameTxt);
             Controls.Add(EMailTxt);
             Name = "PersonAddFRM";
@@ -212,7 +191,6 @@
         #endregion
         public TextBox EMailTxt;
         public TextBox FirstNameTxt;
-        public TextBox JobTitleTxt;
         public TextBox LastNameTxt;
         public TextBox DepartmentTxt;
         private Label label1;
@@ -225,6 +203,5 @@
         private Button AddBtn;
         private MaskedTextBox PhoneNumberTxt;
         private ComboBox JobTitleCombo;
-        private Button TestBtn;
     }
 }

@@ -119,15 +119,26 @@
     "Id": 11,
     "IsDeleted": false,
     "CreateDate": "2024-03-05T12:35:25.2726955+03:00"
+  },
+  {
+    "FirstName": "a",
+    "LastName": "a",
+    "DepartmentId": 1,
+    "JobTitleId": 1,
+    "Number": "(555) 353-3353",
+    "EmailAdress": "dd",
+    "Id": 12,
+    "IsDeleted": false,
+    "CreateDate": "2024-03-06T08:49:32.1952203+03:00"
   }
 ,{
-  "FirstName": "a",
-  "LastName": "a",
+  "FirstName": "ali",
+  "LastName": "mehmet",
   "DepartmentId": 1,
-  "JobTitleId": 1,
-  "Number": "(555) 353-3353",
-  "EmailAdress": "dd",
-  "Id": 12,
+  "JobTitleId": 2,
+  "Number": "(565) 566-6555",
+  "EmailAdress": "qqq",
+  "Id": 13,
   "IsDeleted": false,
-  "CreateDate": "2024-03-06T08:49:32.1952203+03:00"
+  "CreateDate": "2024-03-06T14:35:49.6497739+03:00"
 }]

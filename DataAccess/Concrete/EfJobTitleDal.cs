@@ -12,7 +12,7 @@ namespace DataAccess.Concrete
     public class EfJobTitleDal : JobTitle
     {
         string fileName = "C:\\Users\\oğuz\\source\\repos\\RehberUygulaması\\DataAccess\\Json\\JobTitle.json";
-
+        string JobTitleId;
 
         public List<JobTitle> JsonList()
         {
@@ -93,11 +93,11 @@ namespace DataAccess.Concrete
             }
 
         }
-        public void JobTitleFilter(string comboSelect)
+        public string JobTitleFilter(string comboSelect)
         {
             try
             {
-                string JobTitleId;
+               
                 string json;
                 using (StreamReader r = new StreamReader(fileName))
                 {
@@ -116,23 +116,26 @@ namespace DataAccess.Concrete
                     string JobTitleName = data["JobTitleName"].ToString();
                     if (JobTitleName == comboSelect)
                     {
-                        foreach (JObject IdData in dataArray)
-                        {
+                       
 
 
                             JobTitleId = data["Id"].ToString();
 
-                            MessageBox.Show(Convert.ToString(JobTitleId));
+                            return JobTitleId;
 
-                        }
+                        
+
+                        
                     }
                     //MessageBox.Show(Convert.ToString(JobTitleName));
+                  
                 }
-
+               return "Eşleşen iş pozisyonu bulunamadı ";
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Bir Hata Oluştu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return null;
             }
 
         }

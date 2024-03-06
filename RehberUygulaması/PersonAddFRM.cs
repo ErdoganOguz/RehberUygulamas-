@@ -25,7 +25,7 @@ namespace RehberUygulaması
         }
 
         EfPersonDal efPersonDal = new EfPersonDal();
-        EfJobTitleDal efJobTitle = new EfJobTitleDal();
+        EfJobTitleDal efJobTitleDal = new EfJobTitleDal();
         Person person = new Person();
         private void BackBtn_Click(object sender, EventArgs e)
         {
@@ -36,9 +36,10 @@ namespace RehberUygulaması
 
         public void AddBtn_Click(object sender, EventArgs e)
         {
+
             try
             {
-                efPersonDal.personAdd(FirstNameTxt.Text, LastNameTxt.Text, Convert.ToInt32(DepartmentTxt.Text), Convert.ToInt16(JobTitleTxt.Text), PhoneNumberTxt.Text, EMailTxt.Text);
+                efPersonDal.personAdd(FirstNameTxt.Text, LastNameTxt.Text, Convert.ToInt32(DepartmentTxt.Text), efJobTitleDal.JobTitleFilter(JobTitleCombo.Text), PhoneNumberTxt.Text, EMailTxt.Text);
             }
             catch (Exception ex)
             {
@@ -85,7 +86,7 @@ namespace RehberUygulaması
 
         private void TestBtn_Click(object sender, EventArgs e)
         {
-            efJobTitle.JobTitleFilter(JobTitleCombo.Text);
+            efJobTitleDal.JobTitleFilter(JobTitleCombo.Text);
         }
     }
 }

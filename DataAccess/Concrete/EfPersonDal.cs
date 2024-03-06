@@ -35,7 +35,7 @@ namespace DataAccess.Concrete
             }
             return JsonModelList;
         }
-        public void personAdd(string firstname, string lastname, int departmentid, int jobtitleid, string number, string email)
+        public void personAdd(string firstname, string lastname, int departmentid, string jobtitleid, string number, string email)
         {
             try
             {
@@ -45,7 +45,7 @@ namespace DataAccess.Concrete
                     FirstName = firstname,
                     LastName = lastname,
                     DepartmentId = departmentid,
-                    JobTitleId = jobtitleid,
+                    JobTitleId = Convert.ToInt16( jobtitleid),
                     Number = number,
                     EmailAdress = email,
                     CreateDate = DateTime.Now,
