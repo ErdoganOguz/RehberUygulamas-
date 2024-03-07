@@ -25,7 +25,7 @@
     "FirstName": "Ali",
     "LastName": "Veli",
     "DepartmentId": 2,
-    "JobTitleId": 4,
+    "JobTitleId": 4 ,
     "Number": "55566665856",
     "EmailAdress": "dffd",
     "Id": 3,
@@ -141,15 +141,26 @@
     "Id": 13,
     "IsDeleted": false,
     "CreateDate": "2024-03-06T14:35:49.6497739+03:00"
+  },
+  {
+    "FirstName": "ww",
+    "LastName": "e",
+    "DepartmentId": 2,
+    "JobTitleId": 1,
+    "Number": "(555) 555-5555",
+    "EmailAdress": "ww",
+    "Id": 14,
+    "IsDeleted": false,
+    "CreateDate": "2024-03-06T17:20:01.9519366+03:00"
   }
 ,{
-  "FirstName": "ww",
+  "FirstName": "r",
   "LastName": "e",
-  "DepartmentId": 2,
-  "JobTitleId": 1,
-  "Number": "(555) 555-5555",
+  "DepartmentId": 3,
+  "JobTitleId": 2,
+  "Number": "(554) 455-6333",
   "EmailAdress": "ww",
-  "Id": 14,
+  "Id": 15,
   "IsDeleted": false,
-  "CreateDate": "2024-03-06T17:20:01.9519366+03:00"
+  "CreateDate": "2024-03-07T08:10:31.0338981+03:00"
 }]

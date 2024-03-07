@@ -1,4 +1,5 @@
 ﻿using DataAccess.Entities;
+using DataAccess.Entities.DTO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
@@ -16,19 +17,36 @@ namespace DataAccess.Concrete
     public class EfPersonDal : Person
     {
         string fileName = "C:\\Users\\oğuz\\source\\repos\\RehberUygulaması\\DataAccess\\Json\\person.json";
-
+        EfJobTitleDal jobTitleDal = new EfJobTitleDal();
 
         public List<Person> JsonList()
         {
             List<Person> JsonModelList = null;
 
+            
+
             try
             {
                 dynamic JsonText = File.ReadAllText(fileName);
                 JsonModelList = JsonConvert.DeserializeObject<List<Person>>(JsonText);
+                
+                var jobTitles = jobTitleDal.JsonList();
 
-
-        }
+                var result = from p in JsonModelList
+                             join j in jobTitles
+                on p.JobTitleId equals j.Id
+                
+                             select new PersonDetailDto
+                             {
+                                 FirstName = p.FirstName,
+                                 LastName = p.LastName,
+                                 Number = p.Number,
+                                 Title= j.JobTitleName,
+                            
+                             };
+                List<PersonDetailDto> resultList = result.ToList();
+                return  resultList;
+            }
             catch (Exception ex)
             {
                 MessageBox.Show("Hata oluştu: " + ex.Message);
@@ -44,8 +62,8 @@ namespace DataAccess.Concrete
                     Id = JsonList().Count() + 1,
                     FirstName = firstname,
                     LastName = lastname,
-                    DepartmentId = Convert.ToInt16(departmentid),
-                    JobTitleId = Convert.ToInt16( jobtitleid),
+                    DepartmentId = Convert.ToInt16( departmentid),
+                    JobTitleId = Convert.ToInt16(jobtitleid),
                     Number = number,
                     EmailAdress = email,
                     CreateDate = DateTime.Now,

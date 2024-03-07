@@ -142,5 +142,6 @@ namespace DataAccess.Concrete
                 System.Windows.Forms.MessageBox.Show(ex.Message, "Bir Hata Oluştu", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
             }
         }
+       
     }
 }

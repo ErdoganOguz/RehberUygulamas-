@@ -19,12 +19,14 @@ namespace RehberUygulaması
         EfJobTitleDal efJobTitle = new EfJobTitleDal();
         PersonAddFRM personAddFRM = new PersonAddFRM();
 
-
+       
 
         public void HomePage_Load(object sender, EventArgs e)
         {
-            PersonListDgw.DataSource = efPersonDal.JsonList();
 
+
+            PersonListDgw.DataSource = efPersonDal.JsonList();
+            
         }
 
         private void PersonAddBtn_Click(object sender, EventArgs e)
@@ -48,7 +50,10 @@ namespace RehberUygulaması
             FRM.ShowDialog();
             this.Hide();
         }
-
-     
+        public  void DgwSettings()
+        {
+           // PersonListDgw.ColumnCount = 6;
+            
+        }
     }
 }

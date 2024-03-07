@@ -28,6 +28,7 @@
         /// </summary>
         public void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             PersonListDgw = new DataGridView();
             PersonAddBtn = new Button();
             DepartmentAddBtn = new Button();
@@ -37,10 +38,17 @@
             // 
             // PersonListDgw
             // 
+            PersonListDgw.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            PersonListDgw.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            PersonListDgw.BackgroundColor = Color.White;
             PersonListDgw.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             PersonListDgw.Location = new Point(12, 12);
             PersonListDgw.Name = "PersonListDgw";
+            PersonListDgw.ReadOnly = true;
             PersonListDgw.RowHeadersWidth = 51;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.TopLeft;
+            PersonListDgw.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            PersonListDgw.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             PersonListDgw.Size = new Size(1178, 885);
             PersonListDgw.TabIndex = 0;
             // 
