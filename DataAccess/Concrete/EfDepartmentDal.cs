@@ -85,8 +85,8 @@ namespace DataAccess.Concrete
                 {
 
 
-                    string JobTitleName = data["DepartmentName"].ToString();
-                    if (JobTitleName == comboSelect)
+                    string DepartmentName = data["DepartmentName"].ToString();
+                    if (DepartmentName == comboSelect)
                     {
 
 
@@ -102,7 +102,7 @@ namespace DataAccess.Concrete
                     //MessageBox.Show(Convert.ToString(JobTitleName));
 
                 }
-                return "Eşleşen iş pozisyonu bulunamadı ";
+                return " Lütfen Bölüm Seçiniz ";
             }
             catch (Exception ex)
             {

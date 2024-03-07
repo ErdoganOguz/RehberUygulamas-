@@ -25,7 +25,7 @@ namespace RehberUygulaması
         {
 
 
-            PersonListDgw.DataSource = efPersonDal.JsonList();
+             efPersonDal.PersonList(PersonListDgw);
             
         }
 

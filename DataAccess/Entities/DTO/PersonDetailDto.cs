@@ -8,13 +8,13 @@ namespace DataAccess.Entities.DTO
 {
     public class PersonDetailDto
     {
-        public int Id { get; set; }
+    //    public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string Department { get; set; }
+        public string DepartmentName { get; set; }
         public string Title { get; set; }
         public string EMail { get; set; }
         public string Number { get; set; }
-        public DateTime CreateDate { get; set; }
+      //  public DateTime CreateDate { get; set; }
     }
 }
