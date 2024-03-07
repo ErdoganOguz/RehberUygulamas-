@@ -7,7 +7,7 @@
     "Number": "55566665856",
     "EmailAdress": "dffd",
     "Id": 1,
-    "IsDeleted": false,
+    "IsDeleted": false ,
     "CreateDate": "2024-03-05T11:39:25.6681581+03:00"
   },
   {
@@ -174,15 +174,27 @@
     "Id": 16,
     "IsDeleted": false,
     "CreateDate": "2024-03-07T10:52:27.0981497+03:00"
+  },
+  {
+    "FirstName": "tt",
+    "LastName": "ee",
+    "DepartmentId": 1,
+    "JobTitleId": 4,
+    "Number": "(555) 555-5555",
+    "EmailAdress": "rr",
+    "Id": 17,
+    "IsDeleted": false,
+    "CreateDate": "2024-03-07T13:35:37.0011752+03:00"
+  },
+  {
+    "FirstName": "e",
+    "LastName": "r",
+    "DepartmentId": 2,
+    "JobTitleId": 1,
+    "Number": "(544) 444-4444",
+    "EmailAdress": "eee",
+    "Id": 18,
+    "IsDeleted": true,
+    "CreateDate": "2024-03-07T14:03:40.4890689+03:00"
   }
-,{
-  "FirstName": "tt",
-  "LastName": "ee",
-  "DepartmentId": 1,
-  "JobTitleId": 4,
-  "Number": "(555) 555-5555",
-  "EmailAdress": "rr",
-  "Id": 17,
-  "IsDeleted": false,
-  "CreateDate": "2024-03-07T13:35:37.0011752+03:00"
-}]
+]

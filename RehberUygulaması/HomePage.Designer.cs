@@ -28,11 +28,12 @@
         /// </summary>
         public void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             PersonListDgw = new DataGridView();
             PersonAddBtn = new Button();
             DepartmentAddBtn = new Button();
             JobTiitleAddBtn = new Button();
+            DeleteBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)PersonListDgw).BeginInit();
             SuspendLayout();
             // 
@@ -46,11 +47,12 @@
             PersonListDgw.Name = "PersonListDgw";
             PersonListDgw.ReadOnly = true;
             PersonListDgw.RowHeadersWidth = 51;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.TopLeft;
-            PersonListDgw.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.TopLeft;
+            PersonListDgw.RowsDefaultCellStyle = dataGridViewCellStyle2;
             PersonListDgw.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             PersonListDgw.Size = new Size(1178, 885);
             PersonListDgw.TabIndex = 0;
+            PersonListDgw.SelectionChanged += PersonListDgw_SelectionChanged;
             // 
             // PersonAddBtn
             // 
@@ -82,11 +84,22 @@
             JobTiitleAddBtn.UseVisualStyleBackColor = true;
             JobTiitleAddBtn.Click += JobTiitleAddBtn_Click;
             // 
+            // DeleteBtn
+            // 
+            DeleteBtn.Location = new Point(1296, 685);
+            DeleteBtn.Name = "DeleteBtn";
+            DeleteBtn.Size = new Size(147, 31);
+            DeleteBtn.TabIndex = 4;
+            DeleteBtn.Text = "Sil";
+            DeleteBtn.UseVisualStyleBackColor = true;
+            DeleteBtn.Click += DeleteBtn_Click;
+            // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1902, 1033);
+            Controls.Add(DeleteBtn);
             Controls.Add(JobTiitleAddBtn);
             Controls.Add(DepartmentAddBtn);
             Controls.Add(PersonAddBtn);
@@ -107,5 +120,6 @@
         private Button PersonAddBtn;
         private Button DepartmentAddBtn;
         private Button JobTiitleAddBtn;
+        private Button DeleteBtn;
     }
 }

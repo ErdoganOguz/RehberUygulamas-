@@ -19,14 +19,17 @@ namespace RehberUygulaması
         EfJobTitleDal efJobTitle = new EfJobTitleDal();
         PersonAddFRM personAddFRM = new PersonAddFRM();
 
-       
+
 
         public void HomePage_Load(object sender, EventArgs e)
         {
 
 
-             efPersonDal.PersonList(PersonListDgw);
-            
+            efPersonDal.PersonList(PersonListDgw);
+            this.PersonListDgw.Columns["Id"].Visible = false;
+
+
+
         }
 
         private void PersonAddBtn_Click(object sender, EventArgs e)
@@ -50,10 +53,23 @@ namespace RehberUygulaması
             FRM.ShowDialog();
             this.Hide();
         }
-        public  void DgwSettings()
+        public void DgwSettings()
         {
-           // PersonListDgw.ColumnCount = 6;
-            
+            // PersonListDgw.ColumnCount = 6;
+
+        }
+
+        private void PersonListDgw_SelectionChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            string id = PersonListDgw.SelectedCells[0].Value.ToString();
+            int Id = Convert.ToInt16(id);
+            efPersonDal.PersonDelete(Id);
         }
     }
 }

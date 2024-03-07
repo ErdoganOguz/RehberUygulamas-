@@ -1,8 +1,9 @@
-﻿using System.Text.Json;
+﻿using DataAccess.Concrete.EntityFramework;
+using System.Text.Json;
 
 namespace DataAccess.Entities
 {
-    public class Person: BaseEntity
+    public class Person: BaseEntity 
 
     {
         //public enum DepartmentType: int

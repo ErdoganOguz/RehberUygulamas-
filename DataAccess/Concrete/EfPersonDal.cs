@@ -1,9 +1,11 @@
-﻿using DataAccess.Entities;
+﻿using DataAccess.Concrete.EntityFramework;
+using DataAccess.Entities;
 using DataAccess.Entities.DTO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Diagnostics.Metrics;
 using System.Diagnostics.PerformanceData;
 using System.Linq;
@@ -61,7 +63,7 @@ namespace DataAccess.Concrete
                 File.WriteAllText(fileName, "[" + oldData + "," + personJson + "]");
                 RemoveSquareBrackets(fileName);
                 MessageBox.Show("Kişi Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-               
+
             }
             catch (Exception ex)
             {
@@ -78,54 +80,70 @@ namespace DataAccess.Concrete
         }
         public List<PersonDetailDto> PersonList(System.Windows.Forms.DataGridView gridView)
         {
-            string json;
-            using (StreamReader r = new StreamReader(fileName))
-            {
-                json = r.ReadToEnd();
-            }
 
-            JArray dataArray = JArray.Parse(json);
+            var JsonModelList = JsonList();
 
-            foreach (JObject data in dataArray)
+            var jobTitles = jobTitleDal.JsonList();
+            var department = departmentDal.JsonList();
+
+            var result = from p in JsonModelList
+                         join j in jobTitles
+
+            on p.JobTitleId equals j.Id
+                         join d in department
+            on p.DepartmentId equals d.Id
+                         where p.IsDeleted == false
+
+                         select new PersonDetailDto
+                         {
+                             Id = p.Id,
+                             FirstName = p.FirstName,
+                             LastName = p.LastName,
+                             Number = p.Number,
+                             DepartmentName = d.DepartmentName,
+                             Title = j.JobTitleName,
+                             EMail = p.EmailAdress,
+
+
+                         };
+            List<PersonDetailDto> resultList = result.ToList();
+            gridView.DataSource = resultList;
+            return resultList;
+
+
+
+        }
+
+        public void PersonDelete(int personId)
+        {
+            try
             {
-                bool isDeleted = ((bool)data["IsDeleted"]);
-                if (isDeleted == false)
+                string json;
+                using (StreamReader r = new StreamReader(fileName))
                 {
-
-                    var JsonModelList = JsonList();
-
-                    var jobTitles = jobTitleDal.JsonList();
-                    var department = departmentDal.JsonList();
-
-                    var result = from p in JsonModelList
-                                 join j in jobTitles
-
-                    on p.JobTitleId equals j.Id
-                                 join d in department
-                    on p.DepartmentId equals d.Id
-                                 where p.IsDeleted == false
-
-                                 select new PersonDetailDto
-                                 {
-
-                                     FirstName = p.FirstName,
-                                     LastName = p.LastName,
-                                     Number = p.Number,
-                                     DepartmentName = d.DepartmentName,
-                                     Title = j.JobTitleName,
-                                     EMail = p.EmailAdress,
-
-
-                                 };
-                    List<PersonDetailDto> resultList = result.ToList();
-                    gridView.DataSource = resultList;
-                    return resultList;
-
-
+                    json = r.ReadToEnd();
                 }
 
+                JArray dataArray = JArray.Parse(json);
+
+                foreach (JObject data in dataArray)
+                {
+                    int jsonId = (int)data["Id"];
+                    if (jsonId == personId)
+                    {
+                        data["IsDeleted"] = true;
+                        break;
+                    }
+                }
+
+                File.WriteAllText(fileName, dataArray.ToString());
             }
-            return null;
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata oluştu: " + ex.Message);
+            }
         }
+
+    
     }
 }

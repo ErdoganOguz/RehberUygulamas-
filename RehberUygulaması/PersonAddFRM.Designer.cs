@@ -31,7 +31,6 @@
             EMailTxt = new TextBox();
             FirstNameTxt = new TextBox();
             LastNameTxt = new TextBox();
-            DepartmentTxt = new TextBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -65,13 +64,6 @@
             LastNameTxt.Name = "LastNameTxt";
             LastNameTxt.Size = new Size(169, 27);
             LastNameTxt.TabIndex = 2;
-            // 
-            // DepartmentTxt
-            // 
-            DepartmentTxt.Location = new Point(902, 262);
-            DepartmentTxt.Name = "DepartmentTxt";
-            DepartmentTxt.Size = new Size(169, 27);
-            DepartmentTxt.TabIndex = 3;
             // 
             // label1
             // 
@@ -187,7 +179,6 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(DepartmentTxt);
             Controls.Add(LastNameTxt);
             Controls.Add(FirstNameTxt);
             Controls.Add(EMailTxt);
@@ -202,7 +193,6 @@
         public TextBox EMailTxt;
         public TextBox FirstNameTxt;
         public TextBox LastNameTxt;
-        public TextBox DepartmentTxt;
         private Label label1;
         private Label label2;
         private Label label3;
