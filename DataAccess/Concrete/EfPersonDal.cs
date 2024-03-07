@@ -1,5 +1,4 @@
-﻿using DataAccess.Concrete.EntityFramework;
-using DataAccess.Entities;
+﻿using DataAccess.Entities;
 using DataAccess.Entities.DTO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -41,8 +40,7 @@ namespace DataAccess.Concrete
         }
         public void personAdd(string firstname, string lastname, string departmentid, string jobtitleid, string number, string email)
         {
-            try
-            {
+           
                 var person = new Person()
                 {
                     Id = JsonList().Count() + 1,
@@ -64,11 +62,7 @@ namespace DataAccess.Concrete
                 RemoveSquareBrackets(fileName);
                 MessageBox.Show("Kişi Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Bir Hata Oluştu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+           
         }
         public static string RemoveSquareBrackets(string input)
         {
@@ -137,6 +131,8 @@ namespace DataAccess.Concrete
                 }
 
                 File.WriteAllText(fileName, dataArray.ToString());
+                MessageBox.Show("Kayıt Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
             catch (Exception ex)
             {
@@ -144,6 +140,6 @@ namespace DataAccess.Concrete
             }
         }
 
-    
+
     }
 }

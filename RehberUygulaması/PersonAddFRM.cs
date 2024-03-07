@@ -38,20 +38,14 @@ namespace RehberUygulaması
         public void AddBtn_Click(object sender, EventArgs e)
         {
 
-            try
-            {
-                efPersonDal.personAdd(FirstNameTxt.Text, LastNameTxt.Text, efDepartmentDal.departmentFilter(DepartmentCombo.Text), efJobTitleDal.JobTitleFilter(JobTitleCombo.Text), PhoneNumberTxt.Text, EMailTxt.Text);
+           efPersonDal.personAdd(FirstNameTxt.Text, LastNameTxt.Text, efDepartmentDal.departmentFilter(DepartmentCombo.Text), efJobTitleDal.JobTitleFilter(JobTitleCombo.Text), PhoneNumberTxt.Text, EMailTxt.Text);
                 FirstNameTxt.Clear();
                 LastNameTxt.Clear();
                 DepartmentCombo.Text = "";
                 JobTitleCombo.Text = "";
                 PhoneNumberTxt.Clear();
                 EMailTxt.Clear();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Bir Hata Oluştu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+           
         }
 
         public void PersonAddFRM_Load(object sender, EventArgs e)

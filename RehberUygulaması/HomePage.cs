@@ -70,6 +70,7 @@ namespace RehberUygulaması
             string id = PersonListDgw.SelectedCells[0].Value.ToString();
             int Id = Convert.ToInt16(id);
             efPersonDal.PersonDelete(Id);
+            efPersonDal.PersonList(PersonListDgw);
         }
     }
 }

@@ -7,7 +7,7 @@
     "Number": "55566665856",
     "EmailAdress": "dffd",
     "Id": 1,
-    "IsDeleted": false ,
+    "IsDeleted": false,
     "CreateDate": "2024-03-05T11:39:25.6681581+03:00"
   },
   {
@@ -139,7 +139,7 @@
     "Number": "(565) 566-6555",
     "EmailAdress": "qqq",
     "Id": 13,
-    "IsDeleted": false,
+    "IsDeleted": true,
     "CreateDate": "2024-03-06T14:35:49.6497739+03:00"
   },
   {
@@ -161,7 +161,7 @@
     "Number": "(554) 455-6333",
     "EmailAdress": "ww",
     "Id": 15,
-    "IsDeleted": false,
+    "IsDeleted": true,
     "CreateDate": "2024-03-07T08:10:31.0338981+03:00"
   },
   {
@@ -172,7 +172,7 @@
     "Number": "(522) 222-2222",
     "EmailAdress": "wwwww",
     "Id": 16,
-    "IsDeleted": false,
+    "IsDeleted": true,
     "CreateDate": "2024-03-07T10:52:27.0981497+03:00"
   },
   {
@@ -183,7 +183,7 @@
     "Number": "(555) 555-5555",
     "EmailAdress": "rr",
     "Id": 17,
-    "IsDeleted": false,
+    "IsDeleted": true,
     "CreateDate": "2024-03-07T13:35:37.0011752+03:00"
   },
   {
@@ -197,4 +197,14 @@
     "IsDeleted": true,
     "CreateDate": "2024-03-07T14:03:40.4890689+03:00"
   }
-]
+,{
+  "FirstName": "q",
+  "LastName": "w",
+  "DepartmentId": 2,
+  "JobTitleId": 1,
+  "Number": "(5  )    -3",
+  "EmailAdress": "q",
+  "Id": 19,
+  "IsDeleted": false,
+  "CreateDate": "2024-03-07T16:56:13.385683+03:00"
+}]
