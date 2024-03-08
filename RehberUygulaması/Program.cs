@@ -1,5 +1,6 @@
 using Business;
 using DataAccess.Entities;
+using DataAccess.Repositories;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Text.Json.Serialization;
@@ -18,7 +19,11 @@ namespace RehberUygulaması
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new HomePage());            
+            AppRepository appRepository = new AppRepository();
+            appRepository.CheckRepository();
+            Application.Run(new HomePage());  
+           
+            
         }
     }
 }

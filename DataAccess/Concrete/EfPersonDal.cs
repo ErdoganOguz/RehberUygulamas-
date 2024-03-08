@@ -19,7 +19,8 @@ namespace DataAccess.Concrete
 {
     public class EfPersonDal : Person
     {
-        string fileName = "C:\\Users\\oğuz\\source\\repos\\RehberUygulaması\\DataAccess\\Json\\person.json";
+        string fileName = "C:\\RehberUygulaması\\Person.json";
+
 
         EfJobTitleDal jobTitleDal = new EfJobTitleDal();
         EfDepartmentDal departmentDal = new EfDepartmentDal();
@@ -242,7 +243,7 @@ namespace DataAccess.Concrete
                          join d in department
             on p.DepartmentId equals d.Id
                          where p.FirstName.Contains(searchTxt.Text) || p.LastName.Contains(searchTxt.Text) || p.Number.Contains(searchTxt.Text) || d.DepartmentName.Contains(searchTxt.Text) || j.JobTitleName.Contains(searchTxt.Text) || p.EmailAdress.Contains(searchTxt.Text)
-                         
+                         where p.IsDeleted == false
 
 
                          select new PersonDetailDto

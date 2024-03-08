@@ -11,7 +11,7 @@ namespace DataAccess.Concrete
 {
     public class EfDepartmentDal : Department
     {
-        string fileName = "C:\\Users\\oğuz\\source\\repos\\RehberUygulaması\\DataAccess\\Json\\Depeartment.json";
+        string fileName = "C:\\RehberUygulaması\\Department.json";
         string DepartmentId;
 
         public List<Department> JsonList()

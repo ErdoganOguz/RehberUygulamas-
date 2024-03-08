@@ -11,7 +11,7 @@ namespace DataAccess.Concrete
 {
     public class EfJobTitleDal : JobTitle
     {
-        string fileName = "C:\\Users\\oğuz\\source\\repos\\RehberUygulaması\\DataAccess\\Json\\JobTitle.json";
+        string fileName = "C:\\RehberUygulaması\\JobTitle.json";
 
 
 
