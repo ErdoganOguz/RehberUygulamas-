@@ -36,15 +36,8 @@ namespace RehberUygulaması
         }
 
         public void AddBtn_Click(object sender, EventArgs e)
-        {
-
-           efPersonDal.personAdd(FirstNameTxt.Text, LastNameTxt.Text, efDepartmentDal.departmentFilter(DepartmentCombo.Text), efJobTitleDal.JobTitleFilter(JobTitleCombo.Text), PhoneNumberTxt.Text, EMailTxt.Text);
-                FirstNameTxt.Clear();
-                LastNameTxt.Clear();
-                DepartmentCombo.Text = "";
-                JobTitleCombo.Text = "";
-                PhoneNumberTxt.Clear();
-                EMailTxt.Clear();
+        { 
+            efPersonDal.personAdd(FirstNameTxt, LastNameTxt, efDepartmentDal.departmentFilter(DepartmentCombo.Text), efJobTitleDal.JobTitleFilter(JobTitleCombo.Text), PhoneNumberTxt, EMailTxt, DepartmentCombo, JobTitleCombo);
            
         }
 
@@ -55,6 +48,5 @@ namespace RehberUygulaması
             efDepartmentDal.DepartmentComboList(DepartmentCombo);
 
         }
-
     }
 }

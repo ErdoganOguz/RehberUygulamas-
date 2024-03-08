@@ -17,6 +17,7 @@ namespace RehberUygulaması
         }
         EfPersonDal efPersonDal = new EfPersonDal();
         EfJobTitleDal efJobTitle = new EfJobTitleDal();
+        EfDepartmentDal efDepartmentDal = new EfDepartmentDal();
         PersonAddFRM personAddFRM = new PersonAddFRM();
 
 
@@ -27,6 +28,8 @@ namespace RehberUygulaması
 
             efPersonDal.PersonList(PersonListDgw);
             this.PersonListDgw.Columns["Id"].Visible = false;
+            efJobTitle.JobTitleComboList(TitleUpdateCombo);
+            efDepartmentDal.DepartmentComboList(DepartmentUpdateCombo);
 
 
 
@@ -58,19 +61,25 @@ namespace RehberUygulaması
             // PersonListDgw.ColumnCount = 6;
 
         }
-
-        private void PersonListDgw_SelectionChanged(object sender, EventArgs e)
+        private void DeleteBtn_Click(object sender, EventArgs e)
         {
-           
+            //  int Id = FindId();
+            efPersonDal.PersonDelete(efPersonDal.FindId(PersonListDgw), PersonListDgw);
+        
         }
 
 
-        private void DeleteBtn_Click(object sender, EventArgs e)
+
+        private void PersonListDgw_DoubleClick(object sender, EventArgs e)
         {
-            string id = PersonListDgw.SelectedCells[0].Value.ToString();
-            int Id = Convert.ToInt16(id);
-            efPersonDal.PersonDelete(Id);
-            efPersonDal.PersonList(PersonListDgw);
+            efPersonDal.GetPerson(FirstNameUpdateTxt, LastNameUpdateTxt, DepartmentUpdateCombo, TitleUpdateCombo, NumberUpdatetxt, MailUpdadetxt, PersonListDgw);
+            int id = efPersonDal.FindId(PersonListDgw);
+        }
+
+        private void PersonUpdateBtn_Click(object sender, EventArgs e)
+        {
+            efPersonDal.PersonDetailUpdade(efPersonDal.FindId(PersonListDgw), FirstNameUpdateTxt, LastNameUpdateTxt, efDepartmentDal.departmentFilter(DepartmentUpdateCombo.Text), efJobTitle.JobTitleFilter(TitleUpdateCombo.Text),NumberUpdatetxt,MailUpdadetxt, DepartmentUpdateCombo, TitleUpdateCombo, PersonListDgw);
+              
         }
     }
 }

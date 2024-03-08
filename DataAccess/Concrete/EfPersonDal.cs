@@ -38,31 +38,37 @@ namespace DataAccess.Concrete
             }
             return JsonModelList;
         }
-        public void personAdd(string firstname, string lastname, string departmentid, string jobtitleid, string number, string email)
+        public void personAdd(TextBox firstname, TextBox lastname, string departmentid, string jobtitleid, MaskedTextBox number, TextBox email ,ComboBox depatrmentcombo,ComboBox titlecombo)
         {
-           
-                var person = new Person()
-                {
-                    Id = JsonList().Count() + 1,
-                    FirstName = firstname,
-                    LastName = lastname,
-                    DepartmentId = Convert.ToInt16(departmentid),
-                    JobTitleId = Convert.ToInt16(jobtitleid),
-                    Number = number,
-                    EmailAdress = email,
-                    CreateDate = DateTime.Now,
-                    IsDeleted = false
-                };
-                List<Person> data = JsonList();
-                var oldData = JsonConvert.SerializeObject(data, Formatting.Indented);
-                var personJson = JsonConvert.SerializeObject(person, Formatting.Indented);
-                oldData = RemoveSquareBrackets(oldData);
-                File.WriteAllText(fileName, " ");
-                File.WriteAllText(fileName, "[" + oldData + "," + personJson + "]");
-                RemoveSquareBrackets(fileName);
-                MessageBox.Show("Kişi Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-           
+            var person = new Person()
+            {
+                Id = JsonList().Count() + 1,
+                FirstName = firstname.Text,
+                LastName = lastname.Text,
+                DepartmentId = Convert.ToInt16(departmentid),
+                JobTitleId = Convert.ToInt16(jobtitleid),
+                Number = number.Text,
+                EmailAdress = email.Text,
+                CreateDate = DateTime.Now,
+                IsDeleted = false
+            };
+            List<Person> data = JsonList();
+            var oldData = JsonConvert.SerializeObject(data, Formatting.Indented);
+            var personJson = JsonConvert.SerializeObject(person, Formatting.Indented);
+            oldData = RemoveSquareBrackets(oldData);
+            File.WriteAllText(fileName, " ");
+            File.WriteAllText(fileName, "[" + oldData + "," + personJson + "]");
+            RemoveSquareBrackets(fileName);
+            MessageBox.Show("Kişi Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            firstname.Clear();
+            lastname.Clear();
+            email.Clear();
+            number.Clear();
+            depatrmentcombo.Text = "";
+            titlecombo.Text = "";
+            
         }
         public static string RemoveSquareBrackets(string input)
         {
@@ -108,9 +114,66 @@ namespace DataAccess.Concrete
 
         }
 
-        public void PersonDelete(int personId)
+        public void PersonDelete(int personId , DataGridView dataGrid)
         {
-            try
+
+            DialogResult result = MessageBox.Show("Kişiyi silmek istediğinize emin misiniz? ", "Uyarı ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    string json;
+                    using (StreamReader r = new StreamReader(fileName))
+                    {
+                        json = r.ReadToEnd();
+                    }
+
+                    JArray dataArray = JArray.Parse(json);
+
+                    foreach (JObject data in dataArray)
+                    {
+                        int jsonId = (int)data["Id"];
+                        if (jsonId == personId)
+                        {
+                            data["IsDeleted"] = true;
+                            break;
+                        }
+                    }
+
+                    File.WriteAllText(fileName, dataArray.ToString());
+                    MessageBox.Show("Kayıt Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    PersonList(dataGrid);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Hata oluştu: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("İşlem iptal edildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
+        public string GetPerson(TextBox FirstName, TextBox LastName, ComboBox Deparment, ComboBox Title, MaskedTextBox Number, TextBox mail, DataGridView PersonlistDgv)
+        {
+            FirstName.Text = PersonlistDgv.SelectedCells[1].Value.ToString();
+            LastName.Text = PersonlistDgv.SelectedCells[2].Value.ToString();
+            Deparment.Text = PersonlistDgv.SelectedCells[3].Value.ToString();
+            Title.Text = PersonlistDgv.SelectedCells[4].Value.ToString();
+            mail.Text = PersonlistDgv.SelectedCells[5].Value.ToString();
+            Number.Text = PersonlistDgv.SelectedCells[6].Value.ToString();
+
+            return null;
+        }
+        public int FindId(DataGridView dataGridView)
+        {
+            string id = dataGridView.SelectedCells[0].Value.ToString();
+            return Convert.ToInt16(id);
+        }
+        public void PersonDetailUpdade(int personId, TextBox FirstName, TextBox LastName, string DeparmentId, string TitleId, MaskedTextBox Number, TextBox mail, ComboBox departmantcombo,ComboBox titlecombo, DataGridView dataGrid)
+        {
+            try   //FistName
             {
                 string json;
                 using (StreamReader r = new StreamReader(fileName))
@@ -125,21 +188,168 @@ namespace DataAccess.Concrete
                     int jsonId = (int)data["Id"];
                     if (jsonId == personId)
                     {
-                        data["IsDeleted"] = true;
+                        data["FirstName"] = FirstName.Text;
                         break;
                     }
                 }
 
                 File.WriteAllText(fileName, dataArray.ToString());
-                MessageBox.Show("Kayıt Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Hata oluştu: " + ex.Message);
             }
+            try   //LastName
+            {
+                string json;
+                using (StreamReader r = new StreamReader(fileName))
+                {
+                    json = r.ReadToEnd();
+                }
+
+                JArray dataArray = JArray.Parse(json);
+
+                foreach (JObject data in dataArray)
+                {
+                    int jsonId = (int)data["Id"];
+                    if (jsonId == personId)
+                    {
+                        data["LastName"] = LastName.Text;
+                        break;
+                    }
+                }
+
+                File.WriteAllText(fileName, dataArray.ToString());
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata oluştu: " + ex.Message);
+            }
+            try    // Department
+            {
+                string json;
+                using (StreamReader r = new StreamReader(fileName))
+                {
+                    json = r.ReadToEnd();
+                }
+
+                JArray dataArray = JArray.Parse(json);
+
+                foreach (JObject data in dataArray)
+                {
+                    int jsonId = (int)data["Id"];
+                    if (jsonId == personId)
+                    {
+                        data["DepartmentId"] = DeparmentId;
+                        break;
+                    }
+                }
+
+                File.WriteAllText(fileName, dataArray.ToString());
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata oluştu: " + ex.Message);
+            }
+            try    // Title
+            {
+                string json;
+                using (StreamReader r = new StreamReader(fileName))
+                {
+                    json = r.ReadToEnd();
+                }
+
+                JArray dataArray = JArray.Parse(json);
+
+                foreach (JObject data in dataArray)
+                {
+                    int jsonId = (int)data["Id"];
+                    if (jsonId == personId)
+                    {
+                        data["JobTitleId"] = TitleId;
+                        break;
+                    }
+                }
+
+                File.WriteAllText(fileName, dataArray.ToString());
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata oluştu: " + ex.Message);
+            }
+            try    // Number
+            {
+                string json;
+                using (StreamReader r = new StreamReader(fileName))
+                {
+                    json = r.ReadToEnd();
+                }
+
+                JArray dataArray = JArray.Parse(json);
+
+                foreach (JObject data in dataArray)
+                {
+                    int jsonId = (int)data["Id"];
+                    if (jsonId == personId)
+                    {
+                        data["Number"] = Number.Text;
+                        break;
+                    }
+                }
+
+                File.WriteAllText(fileName, dataArray.ToString());
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata oluştu: " + ex.Message);
+            }
+            try    // Mail
+            {
+                string json;
+                using (StreamReader r = new StreamReader(fileName))
+                {
+                    json = r.ReadToEnd();
+                }
+
+                JArray dataArray = JArray.Parse(json);
+
+                foreach (JObject data in dataArray)
+                {
+                    int jsonId = (int)data["Id"];
+                    if (jsonId == personId)
+                    {
+                        data["EmailAdress"] = mail.Text;
+                        break;
+                    }
+                }
+
+                File.WriteAllText(fileName, dataArray.ToString());
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata oluştu: " + ex.Message);
+            }
+            FirstName.Clear();
+            LastName.Clear();
+            Number.Clear();
+            mail.Clear();
+            departmantcombo.Text = "";
+            titlecombo.Text = "";
+            MessageBox.Show("Kayıt Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            PersonList(dataGrid);
+
         }
-
-
     }
 }

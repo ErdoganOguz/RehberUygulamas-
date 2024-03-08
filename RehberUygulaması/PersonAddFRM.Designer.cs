@@ -39,9 +39,9 @@
             label6 = new Label();
             BackBtn = new Button();
             AddBtn = new Button();
-            PhoneNumberTxt = new MaskedTextBox();
             JobTitleCombo = new ComboBox();
             DepartmentCombo = new ComboBox();
+            PhoneNumberTxt = new MaskedTextBox();
             SuspendLayout();
             // 
             // EMailTxt
@@ -139,14 +139,6 @@
             AddBtn.UseVisualStyleBackColor = true;
             AddBtn.Click += AddBtn_Click;
             // 
-            // PhoneNumberTxt
-            // 
-            PhoneNumberTxt.Location = new Point(179, 223);
-            PhoneNumberTxt.Mask = "(500) 000-0000";
-            PhoneNumberTxt.Name = "PhoneNumberTxt";
-            PhoneNumberTxt.Size = new Size(169, 27);
-            PhoneNumberTxt.TabIndex = 5;
-            // 
             // JobTitleCombo
             // 
             JobTitleCombo.FormattingEnabled = true;
@@ -163,14 +155,22 @@
             DepartmentCombo.Size = new Size(169, 28);
             DepartmentCombo.TabIndex = 17;
             // 
+            // PhoneNumberTxt
+            // 
+            PhoneNumberTxt.Location = new Point(179, 223);
+            PhoneNumberTxt.Mask = "(500) 000-0000";
+            PhoneNumberTxt.Name = "PhoneNumberTxt";
+            PhoneNumberTxt.Size = new Size(169, 27);
+            PhoneNumberTxt.TabIndex = 18;
+            // 
             // PersonAddFRM
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1710, 641);
+            Controls.Add(PhoneNumberTxt);
             Controls.Add(DepartmentCombo);
             Controls.Add(JobTitleCombo);
-            Controls.Add(PhoneNumberTxt);
             Controls.Add(AddBtn);
             Controls.Add(BackBtn);
             Controls.Add(label6);
@@ -201,8 +201,8 @@
         private Label label6;
         private Button BackBtn;
         private Button AddBtn;
-        private MaskedTextBox PhoneNumberTxt;
         private ComboBox JobTitleCombo;
         private ComboBox DepartmentCombo;
+        private MaskedTextBox PhoneNumberTxt;
     }
 }

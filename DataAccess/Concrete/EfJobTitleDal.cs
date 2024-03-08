@@ -24,7 +24,6 @@ namespace DataAccess.Concrete
                 dynamic JsonText = File.ReadAllText(fileName);
                 JsonModelList = JsonConvert.DeserializeObject<List<JobTitle>>(JsonText);
 
-
             }
             catch (Exception ex)
             {
@@ -66,7 +65,7 @@ namespace DataAccess.Concrete
             return input;
         }
 
-       
+
         public string JobTitleFilter(string comboSelect)
         {
             try
@@ -114,7 +113,7 @@ namespace DataAccess.Concrete
 
         }
 
-       
+
         public void JobTitleComboList(System.Windows.Forms.ComboBox comboBox)
         {
             // ComboBox'ı temizle
@@ -122,7 +121,7 @@ namespace DataAccess.Concrete
 
             try
             {
-               
+
                 string json;
                 using (StreamReader r = new StreamReader(fileName))
                 {
@@ -142,6 +141,6 @@ namespace DataAccess.Concrete
                 System.Windows.Forms.MessageBox.Show(ex.Message, "Bir Hata Oluştu", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
             }
         }
-       
+
     }
 }
