@@ -79,10 +79,10 @@
   {
     "FirstName": "Gürkan",
     "LastName": "Tuna",
-    "DepartmentId": 1,
-    "JobTitleId": 2,
-    "Number": "2222",
-    "EmailAdress": "WWW",
+    "DepartmentId": "3",
+    "JobTitleId": "4",
+    "Number": "(522) 227-8888",
+    "EmailAdress": "WWw",
     "Id": 8,
     "IsDeleted": false,
     "CreateDate": "2024-03-05T11:39:25.6681581+03:00"
@@ -209,10 +209,10 @@
     "CreateDate": "2024-03-07T16:56:13.385683+03:00"
   },
   {
-    "FirstName": "wwweewew",
+    "FirstName": "wwweevew",
     "LastName": "w",
-    "DepartmentId": 3,
-    "JobTitleId": 4,
+    "DepartmentId": "3",
+    "JobTitleId": "4",
     "Number": "(554) 454-5455",
     "EmailAdress": "ww",
     "Id": 20,

@@ -1,10 +1,12 @@
 ﻿using DataAccess.Entities;
 using DataAccess.Entities.DTO;
+using Microsoft.SqlServer.Server;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Core.Common.CommandTrees;
 using System.Diagnostics.Metrics;
 using System.Diagnostics.PerformanceData;
 using System.Linq;
@@ -173,174 +175,48 @@ namespace DataAccess.Concrete
         }
         public void PersonDetailUpdade(int personId, TextBox FirstName, TextBox LastName, string DeparmentId, string TitleId, MaskedTextBox Number, TextBox mail, ComboBox departmantcombo,ComboBox titlecombo, DataGridView dataGrid)
         {
-            try   //FistName
+            DialogResult result = MessageBox.Show("Kişi bilgilerini güncellemek istediğine emin misiniz? ", "Uyarı", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
             {
-                string json;
-                using (StreamReader r = new StreamReader(fileName))
+                try   //FistName
                 {
-                    json = r.ReadToEnd();
-                }
-
-                JArray dataArray = JArray.Parse(json);
-
-                foreach (JObject data in dataArray)
-                {
-                    int jsonId = (int)data["Id"];
-                    if (jsonId == personId)
+                    string json;
+                    using (StreamReader r = new StreamReader(fileName))
                     {
-                        data["FirstName"] = FirstName.Text;
-                        break;
+                        json = r.ReadToEnd();
                     }
-                }
 
-                File.WriteAllText(fileName, dataArray.ToString());
-               
+                    JArray dataArray = JArray.Parse(json);
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Hata oluştu: " + ex.Message);
-            }
-            try   //LastName
-            {
-                string json;
-                using (StreamReader r = new StreamReader(fileName))
-                {
-                    json = r.ReadToEnd();
-                }
-
-                JArray dataArray = JArray.Parse(json);
-
-                foreach (JObject data in dataArray)
-                {
-                    int jsonId = (int)data["Id"];
-                    if (jsonId == personId)
+                    foreach (JObject data in dataArray)
                     {
-                        data["LastName"] = LastName.Text;
-                        break;
+                        int jsonId = (int)data["Id"];
+                        if (jsonId == personId)
+                        {
+                            data["FirstName"] = FirstName.Text;
+                            data["LastName"] = LastName.Text;
+                            data["DepartmentId"] = DeparmentId;
+                            data["JobTitleId"] = TitleId;
+                            data["Number"] = Number.Text;
+                            data["EmailAdress"] = mail.Text;
+                            break;
+                        }
                     }
+
+                    File.WriteAllText(fileName, dataArray.ToString());
+
+
                 }
-
-                File.WriteAllText(fileName, dataArray.ToString());
-
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Hata oluştu: " + ex.Message);
-            }
-            try    // Department
-            {
-                string json;
-                using (StreamReader r = new StreamReader(fileName))
+                catch (Exception ex)
                 {
-                    json = r.ReadToEnd();
+                    MessageBox.Show("Hata oluştu: " + ex.Message);
                 }
-
-                JArray dataArray = JArray.Parse(json);
-
-                foreach (JObject data in dataArray)
-                {
-                    int jsonId = (int)data["Id"];
-                    if (jsonId == personId)
-                    {
-                        data["DepartmentId"] = DeparmentId;
-                        break;
-                    }
-                }
-
-                File.WriteAllText(fileName, dataArray.ToString());
-
-
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Hata oluştu: " + ex.Message);
+                MessageBox.Show("İşlem iptal edildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            try    // Title
-            {
-                string json;
-                using (StreamReader r = new StreamReader(fileName))
-                {
-                    json = r.ReadToEnd();
-                }
 
-                JArray dataArray = JArray.Parse(json);
-
-                foreach (JObject data in dataArray)
-                {
-                    int jsonId = (int)data["Id"];
-                    if (jsonId == personId)
-                    {
-                        data["JobTitleId"] = TitleId;
-                        break;
-                    }
-                }
-
-                File.WriteAllText(fileName, dataArray.ToString());
-
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Hata oluştu: " + ex.Message);
-            }
-            try    // Number
-            {
-                string json;
-                using (StreamReader r = new StreamReader(fileName))
-                {
-                    json = r.ReadToEnd();
-                }
-
-                JArray dataArray = JArray.Parse(json);
-
-                foreach (JObject data in dataArray)
-                {
-                    int jsonId = (int)data["Id"];
-                    if (jsonId == personId)
-                    {
-                        data["Number"] = Number.Text;
-                        break;
-                    }
-                }
-
-                File.WriteAllText(fileName, dataArray.ToString());
-
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Hata oluştu: " + ex.Message);
-            }
-            try    // Mail
-            {
-                string json;
-                using (StreamReader r = new StreamReader(fileName))
-                {
-                    json = r.ReadToEnd();
-                }
-
-                JArray dataArray = JArray.Parse(json);
-
-                foreach (JObject data in dataArray)
-                {
-                    int jsonId = (int)data["Id"];
-                    if (jsonId == personId)
-                    {
-                        data["EmailAdress"] = mail.Text;
-                        break;
-                    }
-                }
-
-                File.WriteAllText(fileName, dataArray.ToString());
-
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Hata oluştu: " + ex.Message);
-            }
             FirstName.Clear();
             LastName.Clear();
             Number.Clear();
@@ -349,6 +225,43 @@ namespace DataAccess.Concrete
             titlecombo.Text = "";
             MessageBox.Show("Kayıt Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             PersonList(dataGrid);
+
+        }
+        public List<PersonDetailDto> PersonSearch(DataGridView gridView ,TextBox searchTxt)
+        {
+
+            var JsonModelList = JsonList();
+
+            var jobTitles = jobTitleDal.JsonList();
+            var department = departmentDal.JsonList();
+
+            var result = from p in JsonModelList
+                         join j in jobTitles
+
+            on p.JobTitleId equals j.Id
+                         join d in department
+            on p.DepartmentId equals d.Id
+                         where p.FirstName.Contains(searchTxt.Text) || p.LastName.Contains(searchTxt.Text) || p.Number.Contains(searchTxt.Text) || d.DepartmentName.Contains(searchTxt.Text) || j.JobTitleName.Contains(searchTxt.Text) || p.EmailAdress.Contains(searchTxt.Text)
+                         
+
+
+                         select new PersonDetailDto
+                         {
+                             Id = p.Id,
+                             FirstName = p.FirstName,
+                             LastName = p.LastName,
+                             Number = p.Number,
+                             DepartmentName = d.DepartmentName,
+                             Title = j.JobTitleName,
+                             EMail = p.EmailAdress,
+
+
+                         };
+            List<PersonDetailDto> resultList = result.ToList();
+            gridView.DataSource = resultList;
+            return resultList;
+
+
 
         }
     }

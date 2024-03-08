@@ -28,7 +28,7 @@
         /// </summary>
         public void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             PersonListDgw = new DataGridView();
             PersonAddBtn = new Button();
             DepartmentAddBtn = new Button();
@@ -47,6 +47,8 @@
             label6 = new Label();
             NumberUpdatetxt = new MaskedTextBox();
             PersonUpdateBtn = new Button();
+            SearchTxt = new TextBox();
+            label7 = new Label();
             ((System.ComponentModel.ISupportInitialize)PersonListDgw).BeginInit();
             SuspendLayout();
             // 
@@ -60,8 +62,8 @@
             PersonListDgw.Name = "PersonListDgw";
             PersonListDgw.ReadOnly = true;
             PersonListDgw.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.TopLeft;
-            PersonListDgw.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.TopLeft;
+            PersonListDgw.RowsDefaultCellStyle = dataGridViewCellStyle1;
             PersonListDgw.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             PersonListDgw.Size = new Size(1178, 885);
             PersonListDgw.TabIndex = 0;
@@ -216,11 +218,30 @@
             PersonUpdateBtn.UseVisualStyleBackColor = true;
             PersonUpdateBtn.Click += PersonUpdateBtn_Click;
             // 
+            // SearchTxt
+            // 
+            SearchTxt.Location = new Point(1418, 58);
+            SearchTxt.Name = "SearchTxt";
+            SearchTxt.Size = new Size(125, 27);
+            SearchTxt.TabIndex = 20;
+            SearchTxt.TextChanged += SearchTxt_TextChanged;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(1364, 65);
+            label7.Name = "label7";
+            label7.Size = new Size(32, 20);
+            label7.TabIndex = 21;
+            label7.Text = "Ara";
+            // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1902, 1033);
+            Controls.Add(label7);
+            Controls.Add(SearchTxt);
             Controls.Add(PersonUpdateBtn);
             Controls.Add(NumberUpdatetxt);
             Controls.Add(label6);
@@ -270,5 +291,7 @@
         private Label label6;
         private MaskedTextBox NumberUpdatetxt;
         private Button PersonUpdateBtn;
+        private TextBox SearchTxt;
+        private Label label7;
     }
 }

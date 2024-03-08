@@ -65,7 +65,7 @@ namespace RehberUygulaması
         {
             //  int Id = FindId();
             efPersonDal.PersonDelete(efPersonDal.FindId(PersonListDgw), PersonListDgw);
-        
+
         }
 
 
@@ -78,8 +78,12 @@ namespace RehberUygulaması
 
         private void PersonUpdateBtn_Click(object sender, EventArgs e)
         {
-            efPersonDal.PersonDetailUpdade(efPersonDal.FindId(PersonListDgw), FirstNameUpdateTxt, LastNameUpdateTxt, efDepartmentDal.departmentFilter(DepartmentUpdateCombo.Text), efJobTitle.JobTitleFilter(TitleUpdateCombo.Text),NumberUpdatetxt,MailUpdadetxt, DepartmentUpdateCombo, TitleUpdateCombo, PersonListDgw);
-              
+            efPersonDal.PersonDetailUpdade(efPersonDal.FindId(PersonListDgw), FirstNameUpdateTxt, LastNameUpdateTxt, efDepartmentDal.departmentFilter(DepartmentUpdateCombo.Text), efJobTitle.JobTitleFilter(TitleUpdateCombo.Text), NumberUpdatetxt, MailUpdadetxt, DepartmentUpdateCombo, TitleUpdateCombo, PersonListDgw);
+
+        }
+        private void SearchTxt_TextChanged(object sender, EventArgs e)
+        {
+            efPersonDal.PersonSearch(PersonListDgw, SearchTxt);
         }
     }
 }
