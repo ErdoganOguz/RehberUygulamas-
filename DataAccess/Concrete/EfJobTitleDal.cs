@@ -1,4 +1,5 @@
 ﻿using DataAccess.Entities;
+using DataAccess.Entities.DTO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
@@ -132,8 +133,13 @@ namespace DataAccess.Concrete
 
                 foreach (JObject data in dataArray)
                 {
-                    string jobTitleName = data["JobTitleName"].ToString();
-                    comboBox.Items.Add(jobTitleName);
+                    bool deleted = ((bool)data["IsDeleted"]);
+                    if (!deleted)
+                    {
+                        string jobTitleName = data["JobTitleName"].ToString();
+                        comboBox.Items.Add(jobTitleName);
+                    }
+                    
                 }
             }
             catch (Exception ex)
@@ -142,5 +148,63 @@ namespace DataAccess.Concrete
             }
         }
 
+        public List<TitleDetailDto> TitleList(DataGridView gridView)
+        {
+            var titleList = JsonList();
+
+            var result = from t in titleList
+                         where t.IsDeleted == false 
+                         select new TitleDetailDto
+                         {
+                             Id = t.Id,
+                             TİtleName = t.JobTitleName,
+                         };
+            List<TitleDetailDto> resultList = result.ToList();
+            gridView.DataSource = resultList;
+            return resultList;
+        }
+        public void TitleDelete(int id, DataGridView dataGrid)
+        {
+            DialogResult result = MessageBox.Show("İş Ünvanını Silmek İstediğinize Emin Misiniz?", "Uyarı ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    string json;
+                    using (StreamReader r = new StreamReader(fileName))
+                    {
+                        json = r.ReadToEnd();
+                    }
+                    JArray dataArray = JArray.Parse(json);
+
+                    foreach (JObject data in dataArray)
+                    {
+                        int jsonId = (int)data["Id"];
+                        if (jsonId == id)
+                        {
+                            data["IsDeleted"] = true;
+                            break;
+                        }
+                    }
+                    File.WriteAllText(fileName, dataArray.ToString());
+                    MessageBox.Show("İş Ünvanı Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    TitleList(dataGrid);
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show("Hata Oluştu " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("İşlem İptal Edildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        public int FindId(DataGridView dataGridView)
+        {
+            string id = dataGridView.SelectedCells[1].Value.ToString();
+            return Convert.ToInt16(id);
+        }
     }
 }

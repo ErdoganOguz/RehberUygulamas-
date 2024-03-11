@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RehberUygulaması", "RehberUygulaması\RehberUygulaması.csproj", "{C4E35EDD-BB47-48BA-A3A7-7B76461BA164}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RehberUygulaması", "RehberUygulaması\RehberUygulaması.csproj", "{C4E35EDD-BB47-48BA-A3A7-7B76461BA164}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{D99B3812-3A0D-4BE5-83E6-CA84C0725811}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{D99B3812-3A0D-4BE5-83E6-CA84C0725811}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{F106BD41-F989-4708-8552-54CC7586C861}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{F106BD41-F989-4708-8552-54CC7586C861}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

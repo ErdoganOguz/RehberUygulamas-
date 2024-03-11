@@ -31,12 +31,12 @@
             EMailTxt = new TextBox();
             FirstNameTxt = new TextBox();
             LastNameTxt = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
+            FirstNameLbl = new Label();
+            LastNameLbl = new Label();
+            DepartmentLbl = new Label();
+            TitleLbl = new Label();
+            NumberLbl = new Label();
+            EmailLbl = new Label();
             BackBtn = new Button();
             AddBtn = new Button();
             JobTitleCombo = new ComboBox();
@@ -65,59 +65,59 @@
             LastNameTxt.Size = new Size(169, 27);
             LastNameTxt.TabIndex = 2;
             // 
-            // label1
+            // FirstNameLbl
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(34, 63);
-            label1.Name = "label1";
-            label1.Size = new Size(32, 20);
-            label1.TabIndex = 6;
-            label1.Text = "Adı";
+            FirstNameLbl.AutoSize = true;
+            FirstNameLbl.Location = new Point(34, 63);
+            FirstNameLbl.Name = "FirstNameLbl";
+            FirstNameLbl.Size = new Size(32, 20);
+            FirstNameLbl.TabIndex = 6;
+            FirstNameLbl.Text = "Adı";
             // 
-            // label2
+            // LastNameLbl
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(34, 99);
-            label2.Name = "label2";
-            label2.Size = new Size(60, 20);
-            label2.TabIndex = 7;
-            label2.Text = "Soy Adı";
+            LastNameLbl.AutoSize = true;
+            LastNameLbl.Location = new Point(34, 99);
+            LastNameLbl.Name = "LastNameLbl";
+            LastNameLbl.Size = new Size(60, 20);
+            LastNameLbl.TabIndex = 7;
+            LastNameLbl.Text = "Soy Adı";
             // 
-            // label3
+            // DepartmentLbl
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(34, 138);
-            label3.Name = "label3";
-            label3.Size = new Size(60, 20);
-            label3.TabIndex = 8;
-            label3.Text = "Bölümü";
+            DepartmentLbl.AutoSize = true;
+            DepartmentLbl.Location = new Point(34, 138);
+            DepartmentLbl.Name = "DepartmentLbl";
+            DepartmentLbl.Size = new Size(60, 20);
+            DepartmentLbl.TabIndex = 8;
+            DepartmentLbl.Text = "Bölümü";
             // 
-            // label4
+            // TitleLbl
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(34, 180);
-            label4.Name = "label4";
-            label4.Size = new Size(54, 20);
-            label4.TabIndex = 9;
-            label4.Text = "Ünvanı";
+            TitleLbl.AutoSize = true;
+            TitleLbl.Location = new Point(34, 180);
+            TitleLbl.Name = "TitleLbl";
+            TitleLbl.Size = new Size(54, 20);
+            TitleLbl.TabIndex = 9;
+            TitleLbl.Text = "Ünvanı";
             // 
-            // label5
+            // NumberLbl
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(34, 226);
-            label5.Name = "label5";
-            label5.Size = new Size(72, 20);
-            label5.TabIndex = 10;
-            label5.Text = "Numarası";
+            NumberLbl.AutoSize = true;
+            NumberLbl.Location = new Point(34, 226);
+            NumberLbl.Name = "NumberLbl";
+            NumberLbl.Size = new Size(72, 20);
+            NumberLbl.TabIndex = 10;
+            NumberLbl.Text = "Numarası";
             // 
-            // label6
+            // EmailLbl
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(34, 269);
-            label6.Name = "label6";
-            label6.Size = new Size(52, 20);
-            label6.TabIndex = 11;
-            label6.Text = "E-Mail";
+            EmailLbl.AutoSize = true;
+            EmailLbl.Location = new Point(34, 269);
+            EmailLbl.Name = "EmailLbl";
+            EmailLbl.Size = new Size(52, 20);
+            EmailLbl.TabIndex = 11;
+            EmailLbl.Text = "E-Mail";
             // 
             // BackBtn
             // 
@@ -167,23 +167,23 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1710, 641);
+            ClientSize = new Size(1263, 721);
+            ControlBox = false;
             Controls.Add(PhoneNumberTxt);
             Controls.Add(DepartmentCombo);
             Controls.Add(JobTitleCombo);
             Controls.Add(AddBtn);
             Controls.Add(BackBtn);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(EmailLbl);
+            Controls.Add(NumberLbl);
+            Controls.Add(TitleLbl);
+            Controls.Add(DepartmentLbl);
+            Controls.Add(LastNameLbl);
+            Controls.Add(FirstNameLbl);
             Controls.Add(LastNameTxt);
             Controls.Add(FirstNameTxt);
             Controls.Add(EMailTxt);
             Name = "PersonAddFRM";
-            Text = "PersonAddFRM";
             Load += PersonAddFRM_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -193,16 +193,16 @@
         public TextBox EMailTxt;
         public TextBox FirstNameTxt;
         public TextBox LastNameTxt;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
         private Button BackBtn;
         private Button AddBtn;
         private ComboBox JobTitleCombo;
         private ComboBox DepartmentCombo;
         private MaskedTextBox PhoneNumberTxt;
+        public Label FirstNameLbl;
+        public Label LastNameLbl;
+        public Label DepartmentLbl;
+        public Label TitleLbl;
+        public Label NumberLbl;
+        public Label EmailLbl;
     }
 }

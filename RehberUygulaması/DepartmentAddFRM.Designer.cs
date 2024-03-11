@@ -33,15 +33,19 @@
             label1 = new Label();
             DepartmentAddBtn = new Button();
             BackBtn = new Button();
+            BtnDelete = new Button();
             ((System.ComponentModel.ISupportInitialize)DepaermentListDgw).BeginInit();
             SuspendLayout();
             // 
             // DepaermentListDgw
             // 
+            DepaermentListDgw.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            DepaermentListDgw.BackgroundColor = Color.White;
             DepaermentListDgw.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DepaermentListDgw.Location = new Point(12, 12);
             DepaermentListDgw.Name = "DepaermentListDgw";
             DepaermentListDgw.RowHeadersWidth = 51;
+            DepaermentListDgw.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             DepaermentListDgw.Size = new Size(636, 310);
             DepaermentListDgw.TabIndex = 0;
             // 
@@ -81,18 +85,29 @@
             BackBtn.UseVisualStyleBackColor = true;
             BackBtn.Click += BackBtn_Click;
             // 
+            // BtnDelete
+            // 
+            BtnDelete.Location = new Point(856, 338);
+            BtnDelete.Name = "BtnDelete";
+            BtnDelete.Size = new Size(94, 29);
+            BtnDelete.TabIndex = 5;
+            BtnDelete.Text = "Sil";
+            BtnDelete.UseVisualStyleBackColor = true;
+            BtnDelete.Click += BtnDelete_Click;
+            // 
             // DepartmentAddFRM
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1401, 660);
+            ControlBox = false;
+            Controls.Add(BtnDelete);
             Controls.Add(BackBtn);
             Controls.Add(DepartmentAddBtn);
             Controls.Add(label1);
             Controls.Add(DepartmentAddTxt);
             Controls.Add(DepaermentListDgw);
             Name = "DepartmentAddFRM";
-            Text = "DepartmentAddFRM";
             Load += DepartmentAddFRM_Load;
             ((System.ComponentModel.ISupportInitialize)DepaermentListDgw).EndInit();
             ResumeLayout(false);
@@ -106,5 +121,6 @@
         private Label label1;
         private Button DepartmentAddBtn;
         private Button BackBtn;
+        private Button BtnDelete;
     }
 }

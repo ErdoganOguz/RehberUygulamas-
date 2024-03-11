@@ -1,4 +1,5 @@
 ﻿using DataAccess.Entities;
+using DataAccess.Entities.DTO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
@@ -13,7 +14,7 @@ namespace DataAccess.Concrete
     {
         string fileName = "C:\\RehberUygulaması\\Department.json";
         string DepartmentId;
-
+        
         public List<Department> JsonList()
         {
             List<Department> JsonModelList = null;
@@ -129,8 +130,14 @@ namespace DataAccess.Concrete
 
                 foreach (JObject data in dataArray)
                 {
-                    string DepartmentName = data["DepartmentName"].ToString();
-                    comboBox.Items.Add(DepartmentName);
+                    bool deleted = ((bool)data["IsDeleted"]);
+
+                    if (!deleted )
+                    {
+                        string DepartmentName = data["DepartmentName"].ToString();
+                        comboBox.Items.Add(DepartmentName);
+                    }
+
                 }
             }
             catch (Exception ex)
@@ -138,7 +145,66 @@ namespace DataAccess.Concrete
                 System.Windows.Forms.MessageBox.Show(ex.Message, "Bir Hata Oluştu", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
             }
         }
+        public List<DepartmentDetailDto> DepartmentList(DataGridView dataGrid)
+        {
+
+            var departmentList = JsonList();
+            var result = from d in departmentList
+                         where d.IsDeleted == false
+
+                         select new DepartmentDetailDto
+                         {
+                             Id = d.Id,
+                             DepartmentName = d.DepartmentName,
+                         };
+            List<DepartmentDetailDto> resultList = result.ToList();
+            dataGrid.DataSource = resultList;
+            return resultList;
+        }
+        public void DepartmentDelete(int id, DataGridView dataGrid)
+        {
+            DialogResult result = MessageBox.Show("Departmanı Silmek İstediğinize Emin Misiniz?", "Uyarı ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    string json;
+                    using (StreamReader r = new StreamReader(fileName))
+                    {
+                        json = r.ReadToEnd();
+                    }
+                    JArray dataArray = JArray.Parse(json);
+
+                    foreach (JObject data in dataArray)
+                    {
+                        int jsonId = (int)data["Id"];
+                        if (jsonId == id)
+                        {
+                            data["IsDeleted"] = true;
+                            break;
+                        }
+                    }
+                    File.WriteAllText(fileName, dataArray.ToString());
+                    MessageBox.Show("Department Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DepartmentList(dataGrid);
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show("Hata Oluştu " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("İşlem İptal Edildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        public int FindId(DataGridView dataGridView)
+        {
+            string id = dataGridView.SelectedCells[1].Value.ToString();
+            return Convert.ToInt16(id);
+        }
     }
-   
+
 
 }

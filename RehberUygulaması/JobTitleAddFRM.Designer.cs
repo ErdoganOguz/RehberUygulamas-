@@ -33,6 +33,7 @@
             label1 = new Label();
             JobTitleAddTxt = new TextBox();
             JobTitleListDgw = new DataGridView();
+            DeleteBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)JobTitleListDgw).BeginInit();
             SuspendLayout();
             // 
@@ -74,25 +75,39 @@
             // 
             // JobTitleListDgw
             // 
+            JobTitleListDgw.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            JobTitleListDgw.BackgroundColor = Color.White;
             JobTitleListDgw.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             JobTitleListDgw.Location = new Point(12, 12);
             JobTitleListDgw.Name = "JobTitleListDgw";
             JobTitleListDgw.RowHeadersWidth = 51;
+            JobTitleListDgw.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             JobTitleListDgw.Size = new Size(636, 310);
             JobTitleListDgw.TabIndex = 5;
+            // 
+            // DeleteBtn
+            // 
+            DeleteBtn.Location = new Point(856, 328);
+            DeleteBtn.Name = "DeleteBtn";
+            DeleteBtn.Size = new Size(94, 29);
+            DeleteBtn.TabIndex = 10;
+            DeleteBtn.Text = "Sil";
+            DeleteBtn.UseVisualStyleBackColor = true;
+            DeleteBtn.Click += DeleteBtn_Click;
             // 
             // JobTitleAddFRM
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1263, 750);
+            ControlBox = false;
+            Controls.Add(DeleteBtn);
             Controls.Add(BackBtn);
             Controls.Add(JobTitleAddBtn);
             Controls.Add(label1);
             Controls.Add(JobTitleAddTxt);
             Controls.Add(JobTitleListDgw);
             Name = "JobTitleAddFRM";
-            Text = "JobTitleAddFRM";
             Load += JobTitleAddFRM_Load;
             ((System.ComponentModel.ISupportInitialize)JobTitleListDgw).EndInit();
             ResumeLayout(false);
@@ -106,5 +121,6 @@
         private Label label1;
         private TextBox JobTitleAddTxt;
         private DataGridView JobTitleListDgw;
+        private Button DeleteBtn;
     }
 }

@@ -84,34 +84,43 @@ namespace DataAccess.Concrete
         public List<PersonDetailDto> PersonList(System.Windows.Forms.DataGridView gridView)
         {
 
-            var JsonModelList = JsonList();
+            try
+            {
+                
+                var JsonModelList = JsonList();
 
-            var jobTitles = jobTitleDal.JsonList();
-            var department = departmentDal.JsonList();
+                var jobTitles = jobTitleDal.JsonList();
+                var department = departmentDal.JsonList();
 
-            var result = from p in JsonModelList
-                         join j in jobTitles
+                var result = from p in JsonModelList
+                             join j in jobTitles
 
-            on p.JobTitleId equals j.Id
-                         join d in department
-            on p.DepartmentId equals d.Id
-                         where p.IsDeleted == false
+                on p.JobTitleId equals j.Id
+                             join d in department
+                on p.DepartmentId equals d.Id
+                             where p.IsDeleted == false
 
-                         select new PersonDetailDto
-                         {
-                             Id = p.Id,
-                             FirstName = p.FirstName,
-                             LastName = p.LastName,
-                             Number = p.Number,
-                             DepartmentName = d.DepartmentName,
-                             Title = j.JobTitleName,
-                             EMail = p.EmailAdress,
+                             select new PersonDetailDto
+                             {
+                                 Id = p.Id,
+                                 FirstName = p.FirstName,
+                                 LastName = p.LastName,
+                                 Number = p.Number,
+                                 DepartmentName = d.DepartmentName,
+                                 Title = j.JobTitleName,
+                                 EMail = p.EmailAdress,
 
 
-                         };
-            List<PersonDetailDto> resultList = result.ToList();
-            gridView.DataSource = resultList;
-            return resultList;
+                             };
+                List<PersonDetailDto> resultList = result.ToList();
+                gridView.DataSource = resultList;
+                return resultList;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata oluştu: " + ex.Message);
+            }
+            return null;
 
 
 
@@ -230,6 +239,7 @@ namespace DataAccess.Concrete
         }
         public List<PersonDetailDto> PersonSearch(DataGridView gridView ,TextBox searchTxt)
         {
+            
 
             var JsonModelList = JsonList();
 

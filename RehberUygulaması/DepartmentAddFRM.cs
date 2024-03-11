@@ -20,7 +20,11 @@ namespace RehberUygulaması
         EfDepartmentDal efDepartmentDal = new EfDepartmentDal();
         private void DepartmentAddFRM_Load(object sender, EventArgs e)
         {
-            DepaermentListDgw.DataSource = efDepartmentDal.JsonList();
+            //  DepaermentListDgw.DataSource = efDepartmentDal.JsonList();
+            efDepartmentDal.DepartmentList(DepaermentListDgw);
+            DepaermentListDgw.Columns["Id"].Visible = false;
+
+          
         }
 
         private void DepartmentAddBtn_Click(object sender, EventArgs e)
@@ -42,6 +46,11 @@ namespace RehberUygulaması
             HomePage FRM = new HomePage();
             FRM.ShowDialog();
             this.Close();
+        }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+            efDepartmentDal.DepartmentDelete(efDepartmentDal.FindId(DepaermentListDgw), DepaermentListDgw);
         }
     }
 }

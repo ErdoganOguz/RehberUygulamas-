@@ -37,13 +37,21 @@ namespace RehberUygulaması
         private void BackBtn_Click(object sender, EventArgs e)
         {
             HomePage FRM = new HomePage();
-            FRM.ShowDialog();
+            FRM.Show();
             this.Close();
         }
 
         private void JobTitleAddFRM_Load(object sender, EventArgs e)
         {
-            JobTitleListDgw.DataSource = efJobTitleDal.JsonList();
+            // JobTitleListDgw.DataSource = efJobTitleDal.JsonList();
+            efJobTitleDal.TitleList(JobTitleListDgw);
+            JobTitleListDgw.Columns["Id"].Visible = false;
+
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            efJobTitleDal.TitleDelete(efJobTitleDal.FindId(JobTitleListDgw), JobTitleListDgw);
         }
     }
 }

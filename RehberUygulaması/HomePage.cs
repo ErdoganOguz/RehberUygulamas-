@@ -5,6 +5,9 @@ using Newtonsoft.Json;
 using System.Net;
 using System.Data;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Threading;
+
 
 namespace RehberUygulaması
 {
@@ -27,7 +30,7 @@ namespace RehberUygulaması
 
 
             efPersonDal.PersonList(PersonListDgw);
-            this.PersonListDgw.Columns["Id"].Visible = false;
+            PersonListDgw.Columns["Id"].Visible = false;
             efJobTitle.JobTitleComboList(TitleUpdateCombo);
             efDepartmentDal.DepartmentComboList(DepartmentUpdateCombo);
 
@@ -38,7 +41,7 @@ namespace RehberUygulaması
         private void PersonAddBtn_Click(object sender, EventArgs e)
         {
             PersonAddFRM FRM = new PersonAddFRM();
-            FRM.Show();
+            FRM.ShowDialog();
             this.Hide();
 
         }
@@ -54,7 +57,7 @@ namespace RehberUygulaması
         {
             JobTitleAddFRM FRM = new JobTitleAddFRM();
             FRM.ShowDialog();
-            this.Hide();
+          //  this.Hide();
         }
         public void DgwSettings()
         {
@@ -85,5 +88,44 @@ namespace RehberUygulaması
         {
             efPersonDal.PersonSearch(PersonListDgw, SearchTxt);
         }
+
+        private void tRToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void eNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+        public void Languages(string culture)
+        {
+            Thread.CurrentThread.CurrentUICulture.ClearCachedData();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(culture);
+            SearchLbl.Text = Strings.SearchLbl;
+            FirstnameLbl.Text = Strings.FirstNameLbl;
+            LastNamelbl.Text = Strings.LastNameLbl;
+            DepartmentLbl.Text = Strings.DepartmentLbl;
+            TitleLbl.Text = Strings.TitleLbl;
+            NumberLbl.Text = Strings.NumberLbl;
+            EmailLbl.Text = Strings.EmailLbl;
+            personAddFRM.FirstNameLbl.Text = Strings.FirstNameLbl;
+            personAddFRM.LastNameLbl.Text = Strings.LastNameLbl;
+            personAddFRM.DepartmentLbl.Text = Strings.DepartmentLbl;
+            personAddFRM.TitleLbl.Text = Strings.TitleLbl;
+            personAddFRM.NumberLbl.Text = Strings.NumberLbl;
+            personAddFRM.EmailLbl.Text = Strings.EmailLbl;
+
+        }
+        private void tRToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Languages("");
+        }
+
+        private void eNToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Languages("en-US");
+        }
     }
+
 }
