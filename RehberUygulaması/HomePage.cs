@@ -7,6 +7,8 @@ using System.Data;
 using System.Windows.Forms;
 using System.Globalization;
 using System.Threading;
+using System.Configuration;
+using RehberUygulaması.Localization;
 
 
 namespace RehberUygulaması
@@ -22,7 +24,7 @@ namespace RehberUygulaması
         EfJobTitleDal efJobTitle = new EfJobTitleDal();
         EfDepartmentDal efDepartmentDal = new EfDepartmentDal();
         PersonAddFRM personAddFRM = new PersonAddFRM();
-
+        ChangeLanguange changeLanguage = new ChangeLanguange();
 
 
         public void HomePage_Load(object sender, EventArgs e)
@@ -57,7 +59,7 @@ namespace RehberUygulaması
         {
             JobTitleAddFRM FRM = new JobTitleAddFRM();
             FRM.ShowDialog();
-          //  this.Hide();
+            //  this.Hide();
         }
         public void DgwSettings()
         {
@@ -119,13 +121,16 @@ namespace RehberUygulaması
         }
         private void tRToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            Languages("");
+            changeLanguage.UpdateConfig("languange", "tr-TR");
+            Application.Restart();
         }
 
         private void eNToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            Languages("en-US");
+            changeLanguage.UpdateConfig("languange", "en-US");
+            Application.Restart();
         }
+
     }
 
 }

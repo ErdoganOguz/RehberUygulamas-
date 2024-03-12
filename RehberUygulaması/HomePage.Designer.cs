@@ -28,6 +28,7 @@
         /// </summary>
         public void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             PersonListDgw = new DataGridView();
             PersonAddBtn = new Button();
@@ -59,223 +60,155 @@
             // 
             // PersonListDgw
             // 
+            resources.ApplyResources(PersonListDgw, "PersonListDgw");
             PersonListDgw.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             PersonListDgw.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
             PersonListDgw.BackgroundColor = Color.White;
             PersonListDgw.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            PersonListDgw.Location = new Point(12, 58);
             PersonListDgw.Name = "PersonListDgw";
             PersonListDgw.ReadOnly = true;
-            PersonListDgw.RowHeadersWidth = 51;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.TopLeft;
             PersonListDgw.RowsDefaultCellStyle = dataGridViewCellStyle1;
             PersonListDgw.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            PersonListDgw.Size = new Size(1178, 885);
-            PersonListDgw.TabIndex = 0;
             PersonListDgw.DoubleClick += PersonListDgw_DoubleClick;
             // 
             // PersonAddBtn
             // 
-            PersonAddBtn.Location = new Point(1296, 868);
+            resources.ApplyResources(PersonAddBtn, "PersonAddBtn");
             PersonAddBtn.Name = "PersonAddBtn";
-            PersonAddBtn.Size = new Size(147, 29);
-            PersonAddBtn.TabIndex = 1;
-            PersonAddBtn.Text = "Kişi Ekle";
             PersonAddBtn.UseVisualStyleBackColor = true;
             PersonAddBtn.Click += PersonAddBtn_Click;
             // 
             // DepartmentAddBtn
             // 
-            DepartmentAddBtn.Location = new Point(1296, 816);
+            resources.ApplyResources(DepartmentAddBtn, "DepartmentAddBtn");
             DepartmentAddBtn.Name = "DepartmentAddBtn";
-            DepartmentAddBtn.Size = new Size(147, 29);
-            DepartmentAddBtn.TabIndex = 2;
-            DepartmentAddBtn.Text = "Departmanlar";
             DepartmentAddBtn.UseVisualStyleBackColor = true;
             DepartmentAddBtn.Click += DepartmentAddBtn_Click;
             // 
             // JobTiitleAddBtn
             // 
-            JobTiitleAddBtn.Location = new Point(1296, 770);
+            resources.ApplyResources(JobTiitleAddBtn, "JobTiitleAddBtn");
             JobTiitleAddBtn.Name = "JobTiitleAddBtn";
-            JobTiitleAddBtn.Size = new Size(147, 29);
-            JobTiitleAddBtn.TabIndex = 3;
-            JobTiitleAddBtn.Text = "Ünvanlar";
             JobTiitleAddBtn.UseVisualStyleBackColor = true;
             JobTiitleAddBtn.Click += JobTiitleAddBtn_Click;
             // 
             // DeleteBtn
             // 
-            DeleteBtn.Location = new Point(1296, 685);
+            resources.ApplyResources(DeleteBtn, "DeleteBtn");
             DeleteBtn.Name = "DeleteBtn";
-            DeleteBtn.Size = new Size(147, 31);
-            DeleteBtn.TabIndex = 4;
-            DeleteBtn.Text = "Sil";
             DeleteBtn.UseVisualStyleBackColor = true;
             DeleteBtn.Click += DeleteBtn_Click;
             // 
             // FirstNameUpdateTxt
             // 
-            FirstNameUpdateTxt.Location = new Point(1462, 215);
+            resources.ApplyResources(FirstNameUpdateTxt, "FirstNameUpdateTxt");
             FirstNameUpdateTxt.Name = "FirstNameUpdateTxt";
-            FirstNameUpdateTxt.Size = new Size(147, 27);
-            FirstNameUpdateTxt.TabIndex = 5;
             // 
             // LastNameUpdateTxt
             // 
-            LastNameUpdateTxt.Location = new Point(1462, 269);
+            resources.ApplyResources(LastNameUpdateTxt, "LastNameUpdateTxt");
             LastNameUpdateTxt.Name = "LastNameUpdateTxt";
-            LastNameUpdateTxt.Size = new Size(147, 27);
-            LastNameUpdateTxt.TabIndex = 6;
             // 
             // DepartmentUpdateCombo
             // 
+            resources.ApplyResources(DepartmentUpdateCombo, "DepartmentUpdateCombo");
             DepartmentUpdateCombo.FormattingEnabled = true;
-            DepartmentUpdateCombo.Location = new Point(1462, 318);
             DepartmentUpdateCombo.Name = "DepartmentUpdateCombo";
-            DepartmentUpdateCombo.Size = new Size(147, 28);
-            DepartmentUpdateCombo.TabIndex = 7;
             // 
             // TitleUpdateCombo
             // 
+            resources.ApplyResources(TitleUpdateCombo, "TitleUpdateCombo");
             TitleUpdateCombo.FormattingEnabled = true;
-            TitleUpdateCombo.Location = new Point(1462, 372);
             TitleUpdateCombo.Name = "TitleUpdateCombo";
-            TitleUpdateCombo.Size = new Size(147, 28);
-            TitleUpdateCombo.TabIndex = 8;
             // 
             // MailUpdadetxt
             // 
-            MailUpdadetxt.Location = new Point(1462, 481);
+            resources.ApplyResources(MailUpdadetxt, "MailUpdadetxt");
             MailUpdadetxt.Name = "MailUpdadetxt";
-            MailUpdadetxt.Size = new Size(147, 27);
-            MailUpdadetxt.TabIndex = 10;
             // 
             // FirstnameLbl
             // 
-            FirstnameLbl.AutoSize = true;
-            FirstnameLbl.Location = new Point(1296, 218);
+            resources.ApplyResources(FirstnameLbl, "FirstnameLbl");
             FirstnameLbl.Name = "FirstnameLbl";
-            FirstnameLbl.Size = new Size(32, 20);
-            FirstnameLbl.TabIndex = 11;
-            FirstnameLbl.Text = "Adı";
             // 
             // LastNamelbl
             // 
-            LastNamelbl.AutoSize = true;
-            LastNamelbl.Location = new Point(1296, 272);
+            resources.ApplyResources(LastNamelbl, "LastNamelbl");
             LastNamelbl.Name = "LastNamelbl";
-            LastNamelbl.Size = new Size(60, 20);
-            LastNamelbl.TabIndex = 12;
-            LastNamelbl.Text = "Soy Adı";
             // 
             // DepartmentLbl
             // 
-            DepartmentLbl.AutoSize = true;
-            DepartmentLbl.Location = new Point(1296, 326);
+            resources.ApplyResources(DepartmentLbl, "DepartmentLbl");
             DepartmentLbl.Name = "DepartmentLbl";
-            DepartmentLbl.Size = new Size(60, 20);
-            DepartmentLbl.TabIndex = 13;
-            DepartmentLbl.Text = "Bölümü";
             // 
             // TitleLbl
             // 
-            TitleLbl.AutoSize = true;
-            TitleLbl.Location = new Point(1296, 380);
+            resources.ApplyResources(TitleLbl, "TitleLbl");
             TitleLbl.Name = "TitleLbl";
-            TitleLbl.Size = new Size(54, 20);
-            TitleLbl.TabIndex = 14;
-            TitleLbl.Text = "Ünvanı";
             // 
             // NumberLbl
             // 
-            NumberLbl.AutoSize = true;
-            NumberLbl.Location = new Point(1296, 434);
+            resources.ApplyResources(NumberLbl, "NumberLbl");
             NumberLbl.Name = "NumberLbl";
-            NumberLbl.Size = new Size(72, 20);
-            NumberLbl.TabIndex = 15;
-            NumberLbl.Text = "Numarası";
             // 
             // EmailLbl
             // 
-            EmailLbl.AutoSize = true;
-            EmailLbl.Location = new Point(1296, 488);
+            resources.ApplyResources(EmailLbl, "EmailLbl");
             EmailLbl.Name = "EmailLbl";
-            EmailLbl.Size = new Size(52, 20);
-            EmailLbl.TabIndex = 16;
-            EmailLbl.Text = "E-Mail";
             // 
             // NumberUpdatetxt
             // 
-            NumberUpdatetxt.Location = new Point(1462, 431);
-            NumberUpdatetxt.Mask = "(500) 000-0000";
+            resources.ApplyResources(NumberUpdatetxt, "NumberUpdatetxt");
             NumberUpdatetxt.Name = "NumberUpdatetxt";
-            NumberUpdatetxt.Size = new Size(147, 27);
-            NumberUpdatetxt.TabIndex = 18;
             // 
             // PersonUpdateBtn
             // 
-            PersonUpdateBtn.Location = new Point(1515, 548);
+            resources.ApplyResources(PersonUpdateBtn, "PersonUpdateBtn");
             PersonUpdateBtn.Name = "PersonUpdateBtn";
-            PersonUpdateBtn.Size = new Size(94, 29);
-            PersonUpdateBtn.TabIndex = 19;
-            PersonUpdateBtn.Text = "Güncelle";
             PersonUpdateBtn.UseVisualStyleBackColor = true;
             PersonUpdateBtn.Click += PersonUpdateBtn_Click;
             // 
             // SearchTxt
             // 
-            SearchTxt.Location = new Point(1418, 58);
+            resources.ApplyResources(SearchTxt, "SearchTxt");
             SearchTxt.Name = "SearchTxt";
-            SearchTxt.Size = new Size(125, 27);
-            SearchTxt.TabIndex = 20;
             SearchTxt.TextChanged += SearchTxt_TextChanged;
             // 
             // SearchLbl
             // 
-            SearchLbl.AutoSize = true;
-            SearchLbl.Location = new Point(1364, 65);
+            resources.ApplyResources(SearchLbl, "SearchLbl");
             SearchLbl.Name = "SearchLbl";
-            SearchLbl.Size = new Size(32, 20);
-            SearchLbl.TabIndex = 21;
-            SearchLbl.Text = "Ara";
             // 
             // menuStrip1
             // 
+            resources.ApplyResources(menuStrip1, "menuStrip1");
             menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Items.AddRange(new ToolStripItem[] { languagesToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1902, 28);
-            menuStrip1.TabIndex = 22;
-            menuStrip1.Text = "menuStrip1";
             // 
             // languagesToolStripMenuItem
             // 
+            resources.ApplyResources(languagesToolStripMenuItem, "languagesToolStripMenuItem");
             languagesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { tRToolStripMenuItem, eNToolStripMenuItem });
             languagesToolStripMenuItem.Name = "languagesToolStripMenuItem";
-            languagesToolStripMenuItem.Size = new Size(94, 24);
-            languagesToolStripMenuItem.Text = "Languages";
             // 
             // tRToolStripMenuItem
             // 
+            resources.ApplyResources(tRToolStripMenuItem, "tRToolStripMenuItem");
             tRToolStripMenuItem.Name = "tRToolStripMenuItem";
-            tRToolStripMenuItem.Size = new Size(224, 26);
-            tRToolStripMenuItem.Text = "TR";
             tRToolStripMenuItem.Click += tRToolStripMenuItem_Click_1;
             // 
             // eNToolStripMenuItem
             // 
+            resources.ApplyResources(eNToolStripMenuItem, "eNToolStripMenuItem");
             eNToolStripMenuItem.Name = "eNToolStripMenuItem";
-            eNToolStripMenuItem.Size = new Size(224, 26);
-            eNToolStripMenuItem.Text = "EN";
             eNToolStripMenuItem.Click += eNToolStripMenuItem_Click_1;
             // 
             // HomePage
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1902, 1033);
             Controls.Add(SearchLbl);
             Controls.Add(SearchTxt);
             Controls.Add(PersonUpdateBtn);
@@ -300,8 +233,6 @@
             MainMenuStrip = menuStrip1;
             Name = "HomePage";
             ShowIcon = false;
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
             WindowState = FormWindowState.Maximized;
             Load += HomePage_Load;
             ((System.ComponentModel.ISupportInitialize)PersonListDgw).EndInit();

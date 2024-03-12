@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DepartmentAddFRM));
             DepaermentListDgw = new DataGridView();
             DepartmentAddTxt = new TextBox();
             label1 = new Label();
@@ -39,67 +40,48 @@
             // 
             // DepaermentListDgw
             // 
+            resources.ApplyResources(DepaermentListDgw, "DepaermentListDgw");
             DepaermentListDgw.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             DepaermentListDgw.BackgroundColor = Color.White;
             DepaermentListDgw.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DepaermentListDgw.Location = new Point(12, 12);
             DepaermentListDgw.Name = "DepaermentListDgw";
-            DepaermentListDgw.RowHeadersWidth = 51;
             DepaermentListDgw.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            DepaermentListDgw.Size = new Size(636, 310);
-            DepaermentListDgw.TabIndex = 0;
             // 
             // DepartmentAddTxt
             // 
-            DepartmentAddTxt.Location = new Point(771, 12);
+            resources.ApplyResources(DepartmentAddTxt, "DepartmentAddTxt");
             DepartmentAddTxt.Name = "DepartmentAddTxt";
-            DepartmentAddTxt.Size = new Size(179, 27);
-            DepartmentAddTxt.TabIndex = 1;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(654, 15);
+            resources.ApplyResources(label1, "label1");
             label1.Name = "label1";
-            label1.Size = new Size(111, 20);
-            label1.TabIndex = 2;
-            label1.Text = "Departman Adı";
             // 
             // DepartmentAddBtn
             // 
-            DepartmentAddBtn.Location = new Point(856, 293);
+            resources.ApplyResources(DepartmentAddBtn, "DepartmentAddBtn");
             DepartmentAddBtn.Name = "DepartmentAddBtn";
-            DepartmentAddBtn.Size = new Size(94, 29);
-            DepartmentAddBtn.TabIndex = 3;
-            DepartmentAddBtn.Text = "Ekle";
             DepartmentAddBtn.UseVisualStyleBackColor = true;
             DepartmentAddBtn.Click += DepartmentAddBtn_Click;
             // 
             // BackBtn
             // 
-            BackBtn.Location = new Point(856, 248);
+            resources.ApplyResources(BackBtn, "BackBtn");
             BackBtn.Name = "BackBtn";
-            BackBtn.Size = new Size(94, 29);
-            BackBtn.TabIndex = 4;
-            BackBtn.Text = "Geri";
             BackBtn.UseVisualStyleBackColor = true;
             BackBtn.Click += BackBtn_Click;
             // 
             // BtnDelete
             // 
-            BtnDelete.Location = new Point(856, 338);
+            resources.ApplyResources(BtnDelete, "BtnDelete");
             BtnDelete.Name = "BtnDelete";
-            BtnDelete.Size = new Size(94, 29);
-            BtnDelete.TabIndex = 5;
-            BtnDelete.Text = "Sil";
             BtnDelete.UseVisualStyleBackColor = true;
             BtnDelete.Click += BtnDelete_Click;
             // 
             // DepartmentAddFRM
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1401, 660);
             ControlBox = false;
             Controls.Add(BtnDelete);
             Controls.Add(BackBtn);

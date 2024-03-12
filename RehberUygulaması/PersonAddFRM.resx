@@ -117,4 +117,363 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;FirstNameTxt.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="EMailTxt.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;BackBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LastNameLbl.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="DepartmentCombo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 28</value>
+  </data>
+  <data name="&gt;&gt;LastNameTxt.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="DepartmentCombo.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="EMailTxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 27</value>
+  </data>
+  <data name="FirstNameTxt.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="FirstNameLbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 20</value>
+  </data>
+  <data name="&gt;&gt;DepartmentLbl.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;LastNameTxt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TitleLbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NumberLbl.Text" xml:space="preserve">
+    <value>Numarası</value>
+  </data>
+  <data name="&gt;&gt;TitleLbl.Name" xml:space="preserve">
+    <value>TitleLbl</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberTxt.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;EMailTxt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1263, 721</value>
+  </data>
+  <data name="&gt;&gt;EMailTxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TitleLbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 20</value>
+  </data>
+  <data name="FirstNameTxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 27</value>
+  </data>
+  <data name="LastNameLbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 99</value>
+  </data>
+  <data name="DepartmentLbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;LastNameLbl.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 20</value>
+  </data>
+  <data name="TitleLbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 180</value>
+  </data>
+  <data name="NumberLbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TitleLbl.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberTxt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PhoneNumberTxt.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="NumberLbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 226</value>
+  </data>
+  <data name="EmailLbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="BackBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>491, 93</value>
+  </data>
+  <data name="&gt;&gt;NumberLbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DepartmentCombo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EMailTxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 262</value>
+  </data>
+  <data name="PhoneNumberTxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 27</value>
+  </data>
+  <data name="EmailLbl.Text" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="&gt;&gt;FirstNameLbl.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;DepartmentLbl.Name" xml:space="preserve">
+    <value>DepartmentLbl</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PersonAddFRM</value>
+  </data>
+  <data name="&gt;&gt;FirstNameTxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DepartmentLbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;AddBtn.Name" xml:space="preserve">
+    <value>AddBtn</value>
+  </data>
+  <data name="JobTitleCombo.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="LastNameTxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 27</value>
+  </data>
+  <data name="&gt;&gt;EmailLbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="FirstNameLbl.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;EmailLbl.Name" xml:space="preserve">
+    <value>EmailLbl</value>
+  </data>
+  <data name="&gt;&gt;JobTitleCombo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FirstNameLbl.Name" xml:space="preserve">
+    <value>FirstNameLbl</value>
+  </data>
+  <data name="&gt;&gt;TitleLbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BackBtn.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="FirstNameLbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 63</value>
+  </data>
+  <data name="&gt;&gt;AddBtn.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="FirstNameLbl.Text" xml:space="preserve">
+    <value>Adı</value>
+  </data>
+  <data name="LastNameTxt.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="LastNameLbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FirstNameLbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;NumberLbl.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="AddBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 28</value>
+  </data>
+  <data name="DepartmentCombo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 135</value>
+  </data>
+  <data name="&gt;&gt;JobTitleCombo.Name" xml:space="preserve">
+    <value>JobTitleCombo</value>
+  </data>
+  <data name="&gt;&gt;DepartmentLbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;JobTitleCombo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DepartmentCombo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="DepartmentLbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 138</value>
+  </data>
+  <data name="BackBtn.Text" xml:space="preserve">
+    <value>Geri</value>
+  </data>
+  <data name="&gt;&gt;EMailTxt.Name" xml:space="preserve">
+    <value>EMailTxt</value>
+  </data>
+  <data name="EmailLbl.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="AddBtn.Text" xml:space="preserve">
+    <value>Ekle</value>
+  </data>
+  <data name="&gt;&gt;LastNameTxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NumberLbl.Name" xml:space="preserve">
+    <value>NumberLbl</value>
+  </data>
+  <data name="BackBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 29</value>
+  </data>
+  <data name="DepartmentLbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 20</value>
+  </data>
+  <data name="&gt;&gt;BackBtn.Name" xml:space="preserve">
+    <value>BackBtn</value>
+  </data>
+  <data name="&gt;&gt;FirstNameTxt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TitleLbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FirstNameLbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="BackBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;AddBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;EMailTxt.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;AddBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DepartmentLbl.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="JobTitleCombo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 177</value>
+  </data>
+  <data name="&gt;&gt;LastNameTxt.Name" xml:space="preserve">
+    <value>LastNameTxt</value>
+  </data>
+  <data name="PhoneNumberTxt.Mask" xml:space="preserve">
+    <value>(500) 000-0000</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberTxt.Name" xml:space="preserve">
+    <value>PhoneNumberTxt</value>
+  </data>
+  <data name="&gt;&gt;LastNameLbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TitleLbl.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;EmailLbl.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;BackBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NumberLbl.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;DepartmentCombo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="FirstNameTxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 56</value>
+  </data>
+  <data name="&gt;&gt;LastNameLbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="JobTitleCombo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 28</value>
+  </data>
+  <data name="&gt;&gt;DepartmentCombo.Name" xml:space="preserve">
+    <value>DepartmentCombo</value>
+  </data>
+  <data name="&gt;&gt;JobTitleCombo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="DepartmentLbl.Text" xml:space="preserve">
+    <value>Bölümü</value>
+  </data>
+  <data name="&gt;&gt;FirstNameLbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PhoneNumberTxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 223</value>
+  </data>
+  <data name="&gt;&gt;NumberLbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="EmailLbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 269</value>
+  </data>
+  <data name="LastNameTxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 96</value>
+  </data>
+  <data name="&gt;&gt;LastNameLbl.Name" xml:space="preserve">
+    <value>LastNameLbl</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberTxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TitleLbl.Text" xml:space="preserve">
+    <value>Ünvanı</value>
+  </data>
+  <data name="AddBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="LastNameLbl.Text" xml:space="preserve">
+    <value>Soy Adı</value>
+  </data>
+  <data name="NumberLbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 20</value>
+  </data>
+  <data name="AddBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>491, 218</value>
+  </data>
+  <data name="&gt;&gt;FirstNameTxt.Name" xml:space="preserve">
+    <value>FirstNameTxt</value>
+  </data>
+  <data name="&gt;&gt;EmailLbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LastNameLbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 20</value>
+  </data>
+  <data name="EmailLbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>en-US</value>
+  </metadata>
 </root>
