@@ -33,7 +33,7 @@ namespace RehberUygulaması
             {
                 efDepartmentDal.departmentAdd(DepartmentAddTxt.Text);
                 MessageBox.Show("Departman Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                DepaermentListDgw.DataSource = efDepartmentDal.JsonList();
+                efDepartmentDal.DepartmentList(DepaermentListDgw);
             }
             catch (Exception ex)
             {

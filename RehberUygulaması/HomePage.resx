@@ -117,577 +117,577 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;PersonAddBtn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="tRToolStripMenuItem.Text" xml:space="preserve">
-    <value>TR</value>
-  </data>
-  <data name="&gt;&gt;LastNamelbl.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="DepartmentLbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 20</value>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1902, 28</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="LastNamelbl.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="TitleLbl.Text" xml:space="preserve">
-    <value>Ünvanı</value>
-  </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;SearchLbl.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="PersonUpdateBtn.Text" xml:space="preserve">
-    <value>Güncelle</value>
-  </data>
-  <data name="&gt;&gt;DepartmentLbl.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="FirstNameUpdateTxt.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="EmailLbl.Text" xml:space="preserve">
-    <value>E-Mail</value>
-  </data>
-  <data name="&gt;&gt;EmailLbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DepartmentAddBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1296, 816</value>
-  </data>
-  <data name="NumberLbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1296, 434</value>
-  </data>
-  <data name="&gt;&gt;SearchTxt.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="NumberUpdatetxt.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;PersonListDgw.Name" xml:space="preserve">
-    <value>PersonListDgw</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 20</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1902, 1033</value>
-  </data>
-  <data name="MailUpdadetxt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 27</value>
-  </data>
-  <data name="&gt;&gt;MailUpdadetxt.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PersonUpdateBtn.Name" xml:space="preserve">
-    <value>PersonUpdateBtn</value>
-  </data>
-  <data name="&gt;&gt;TitleLbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SearchLbl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;JobTiitleAddBtn.Name" xml:space="preserve">
-    <value>JobTiitleAddBtn</value>
-  </data>
-  <data name="&gt;&gt;TitleLbl.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;DepartmentAddBtn.Name" xml:space="preserve">
-    <value>DepartmentAddBtn</value>
-  </data>
-  <data name="EmailLbl.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="PersonListDgw.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;DepartmentUpdateCombo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SearchLbl.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;tRToolStripMenuItem.Name" xml:space="preserve">
-    <value>tRToolStripMenuItem</value>
-  </data>
-  <data name="NumberLbl.Text" xml:space="preserve">
-    <value>Numarası</value>
-  </data>
-  <data name="&gt;&gt;TitleLbl.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="FirstnameLbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 20</value>
-  </data>
   <data name="PersonUpdateBtn.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
-  <data name="TitleUpdateCombo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 28</value>
-  </data>
-  <data name="LastNamelbl.Text" xml:space="preserve">
-    <value>Soy Adı</value>
-  </data>
-  <data name="&gt;&gt;TitleLbl.Name" xml:space="preserve">
-    <value>TitleLbl</value>
-  </data>
-  <data name="&gt;&gt;SearchLbl.Name" xml:space="preserve">
-    <value>SearchLbl</value>
-  </data>
-  <data name="&gt;&gt;eNToolStripMenuItem.Name" xml:space="preserve">
-    <value>eNToolStripMenuItem</value>
-  </data>
-  <data name="LastNamelbl.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;DeleteBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SearchTxt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1418, 58</value>
-  </data>
-  <data name="DepartmentUpdateCombo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 28</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>HomePage</value>
-  </data>
-  <data name="NumberUpdatetxt.Mask" xml:space="preserve">
-    <value>(500) 000-0000</value>
-  </data>
-  <data name="&gt;&gt;TitleUpdateCombo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FirstNameUpdateTxt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LastNamelbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DepartmentAddBtn.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="DeleteBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1296, 685</value>
-  </data>
-  <data name="&gt;&gt;DeleteBtn.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="SearchLbl.Text" xml:space="preserve">
-    <value>Ara</value>
-  </data>
-  <data name="DepartmentAddBtn.Text" xml:space="preserve">
-    <value>Departmanlar</value>
-  </data>
-  <data name="PersonListDgw.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1178, 885</value>
-  </data>
-  <data name="&gt;&gt;SearchLbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DepartmentLbl.Text" xml:space="preserve">
-    <value>Bölümü</value>
-  </data>
-  <data name="&gt;&gt;FirstNameUpdateTxt.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PersonUpdateBtn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PersonListDgw.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="DepartmentLbl.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="languagesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 24</value>
-  </data>
-  <data name="&gt;&gt;PersonListDgw.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;languagesToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FirstnameLbl.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="JobTiitleAddBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1296, 770</value>
-  </data>
-  <data name="&gt;&gt;MailUpdadetxt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="JobTiitleAddBtn.Text" xml:space="preserve">
-    <value>Ünvanlar</value>
-  </data>
-  <data name="&gt;&gt;DeleteBtn.Name" xml:space="preserve">
-    <value>DeleteBtn</value>
-  </data>
-  <data name="&gt;&gt;LastNameUpdateTxt.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;SearchTxt.Name" xml:space="preserve">
-    <value>SearchTxt</value>
-  </data>
-  <data name="&gt;&gt;TitleUpdateCombo.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;eNToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LastNameUpdateTxt.Name" xml:space="preserve">
-    <value>LastNameUpdateTxt</value>
-  </data>
-  <data name="MailUpdadetxt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1462, 481</value>
-  </data>
-  <data name="LastNameUpdateTxt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1462, 269</value>
-  </data>
-  <data name="&gt;&gt;DepartmentUpdateCombo.Name" xml:space="preserve">
-    <value>DepartmentUpdateCombo</value>
-  </data>
-  <data name="&gt;&gt;MailUpdadetxt.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;FirstNameUpdateTxt.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="PersonUpdateBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1515, 548</value>
-  </data>
-  <data name="LastNamelbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1296, 272</value>
-  </data>
-  <data name="TitleUpdateCombo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1462, 372</value>
-  </data>
-  <data name="PersonListDgw.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="DepartmentAddBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 29</value>
-  </data>
-  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FirstNameUpdateTxt.Name" xml:space="preserve">
-    <value>FirstNameUpdateTxt</value>
+  <data name="EmailLbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="FirstnameLbl.Location" type="System.Drawing.Point, System.Drawing">
     <value>1296, 218</value>
   </data>
-  <data name="&gt;&gt;PersonAddBtn.Name" xml:space="preserve">
-    <value>PersonAddBtn</value>
+  <data name="&gt;&gt;PersonListDgw.ZOrder" xml:space="preserve">
+    <value>19</value>
   </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1902, 28</value>
-  </data>
-  <data name="&gt;&gt;PersonAddBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="eNToolStripMenuItem.Text" xml:space="preserve">
-    <value>EN</value>
-  </data>
-  <data name="NumberLbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 20</value>
-  </data>
-  <data name="SearchTxt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 27</value>
-  </data>
-  <data name="JobTiitleAddBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 29</value>
-  </data>
-  <data name="TitleLbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
-  </data>
-  <data name="NumberUpdatetxt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 27</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;DepartmentUpdateCombo.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="PersonAddBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1296, 868</value>
-  </data>
-  <data name="SearchLbl.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;SearchTxt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SearchLbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 20</value>
-  </data>
-  <data name="JobTiitleAddBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;LastNamelbl.Name" xml:space="preserve">
-    <value>LastNamelbl</value>
-  </data>
-  <data name="&gt;&gt;NumberLbl.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="FirstNameUpdateTxt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1462, 215</value>
-  </data>
-  <data name="&gt;&gt;TitleUpdateCombo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="PersonAddBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 29</value>
-  </data>
-  <data name="&gt;&gt;NumberLbl.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DepartmentLbl.Name" xml:space="preserve">
-    <value>DepartmentLbl</value>
-  </data>
-  <data name="DepartmentLbl.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="PersonAddBtn.Text" xml:space="preserve">
-    <value>Kişi Ekle</value>
-  </data>
-  <data name="&gt;&gt;JobTiitleAddBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DepartmentAddBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DeleteBtn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DepartmentUpdateCombo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DeleteBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 31</value>
-  </data>
-  <data name="DepartmentUpdateCombo.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="NumberUpdatetxt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1462, 431</value>
-  </data>
-  <data name="TitleLbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1296, 380</value>
-  </data>
-  <data name="&gt;&gt;LastNameUpdateTxt.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="NumberLbl.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;EmailLbl.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="LastNameUpdateTxt.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="DepartmentUpdateCombo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1462, 318</value>
-  </data>
-  <data name="LastNamelbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 20</value>
-  </data>
-  <data name="DeleteBtn.Text" xml:space="preserve">
-    <value>Sil</value>
-  </data>
-  <data name="FirstNameUpdateTxt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 27</value>
-  </data>
-  <data name="&gt;&gt;LastNameUpdateTxt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PersonAddBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="FirstnameLbl.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tRToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 26</value>
-  </data>
-  <data name="DepartmentAddBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="TitleLbl.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PersonUpdateBtn.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="PersonListDgw.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 58</value>
-  </data>
-  <data name="&gt;&gt;PersonListDgw.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LastNamelbl.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;PersonAddBtn.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;FirstnameLbl.Type" xml:space="preserve">
+  <data name="&gt;&gt;EmailLbl.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DepartmentLbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;languagesToolStripMenuItem.Name" xml:space="preserve">
-    <value>languagesToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;EmailLbl.Name" xml:space="preserve">
-    <value>EmailLbl</value>
   </data>
   <data name="&gt;&gt;JobTiitleAddBtn.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
-  <data name="&gt;&gt;NumberUpdatetxt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;TitleLbl.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="FirstnameLbl.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="&gt;&gt;FirstNameUpdateTxt.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;SearchTxt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="JobTiitleAddBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="SearchLbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1364, 65</value>
+  </data>
+  <data name="LastNameUpdateTxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1462, 269</value>
+  </data>
+  <data name="EmailLbl.Text" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="DepartmentAddBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="PersonAddBtn.Text" xml:space="preserve">
+    <value>Kişi Ekle</value>
+  </data>
+  <data name="PersonUpdateBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1515, 548</value>
+  </data>
+  <data name="TitleUpdateCombo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1462, 372</value>
+  </data>
+  <data name="DeleteBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1296, 685</value>
+  </data>
+  <data name="&gt;&gt;SearchTxt.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;EmailLbl.Name" xml:space="preserve">
+    <value>EmailLbl</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 20</value>
+  </data>
+  <data name="&gt;&gt;TitleUpdateCombo.Name" xml:space="preserve">
+    <value>TitleUpdateCombo</value>
+  </data>
+  <data name="&gt;&gt;PersonUpdateBtn.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;FirstnameLbl.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;JobTiitleAddBtn.Parent" xml:space="preserve">
+  <data name="&gt;&gt;MailUpdadetxt.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;FirstNameUpdateTxt.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="DepartmentLbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1296, 326</value>
+  <data name="&gt;&gt;DepartmentUpdateCombo.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;NumberLbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="MailUpdadetxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1462, 481</value>
+  </data>
+  <data name="&gt;&gt;DeleteBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="EmailLbl.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;languagesToolStripMenuItem.Name" xml:space="preserve">
+    <value>languagesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;tRToolStripMenuItem.Name" xml:space="preserve">
+    <value>tRToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;DepartmentAddBtn.Name" xml:space="preserve">
+    <value>DepartmentAddBtn</value>
+  </data>
+  <data name="PersonListDgw.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;LastNameUpdateTxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FirstnameLbl.Name" xml:space="preserve">
+    <value>FirstnameLbl</value>
+  </data>
+  <data name="&gt;&gt;PersonListDgw.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PersonAddBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NumberUpdatetxt.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;TitleLbl.Name" xml:space="preserve">
+    <value>TitleLbl</value>
+  </data>
+  <data name="&gt;&gt;DepartmentLbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="FirstnameLbl.Text" xml:space="preserve">
+    <value>Adı</value>
+  </data>
+  <data name="&gt;&gt;DepartmentUpdateCombo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SearchTxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 27</value>
+  </data>
+  <data name="DepartmentUpdateCombo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1462, 318</value>
+  </data>
+  <data name="&gt;&gt;DeleteBtn.Name" xml:space="preserve">
+    <value>DeleteBtn</value>
+  </data>
+  <data name="NumberUpdatetxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1462, 431</value>
+  </data>
+  <data name="LastNamelbl.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="SearchLbl.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;DepartmentAddBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DepartmentAddBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eNToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 26</value>
   </data>
   <data name="PersonUpdateBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 29</value>
   </data>
-  <data name="&gt;&gt;TitleUpdateCombo.Name" xml:space="preserve">
-    <value>TitleUpdateCombo</value>
+  <data name="&gt;&gt;LastNamelbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="JobTiitleAddBtn.Text" xml:space="preserve">
+    <value>Ünvanlar</value>
+  </data>
+  <data name="NumberLbl.Text" xml:space="preserve">
+    <value>Numarası</value>
+  </data>
+  <data name="&gt;&gt;LastNameUpdateTxt.Name" xml:space="preserve">
+    <value>LastNameUpdateTxt</value>
+  </data>
+  <data name="&gt;&gt;PersonAddBtn.Name" xml:space="preserve">
+    <value>PersonAddBtn</value>
+  </data>
+  <data name="DepartmentAddBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 29</value>
+  </data>
+  <data name="&gt;&gt;TitleUpdateCombo.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;TitleLbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="FirstNameUpdateTxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1462, 215</value>
+  </data>
+  <data name="&gt;&gt;PersonListDgw.Name" xml:space="preserve">
+    <value>PersonListDgw</value>
+  </data>
+  <data name="EmailLbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1296, 488</value>
+  </data>
+  <data name="&gt;&gt;DeleteBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LastNameUpdateTxt.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="DepartmentUpdateCombo.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="PersonUpdateBtn.Text" xml:space="preserve">
+    <value>Güncelle</value>
+  </data>
+  <data name="NumberLbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1296, 434</value>
+  </data>
+  <data name="&gt;&gt;MailUpdadetxt.Name" xml:space="preserve">
+    <value>MailUpdadetxt</value>
+  </data>
+  <data name="tRToolStripMenuItem.Text" xml:space="preserve">
+    <value>TR</value>
+  </data>
+  <data name="LastNamelbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1296, 272</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="eNToolStripMenuItem.Text" xml:space="preserve">
+    <value>EN</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="DepartmentLbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 20</value>
+  </data>
+  <data name="LastNamelbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 20</value>
+  </data>
+  <data name="PersonListDgw.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 58</value>
+  </data>
+  <data name="&gt;&gt;PersonAddBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="DepartmentAddBtn.Text" xml:space="preserve">
+    <value>Departmanlar</value>
+  </data>
+  <data name="&gt;&gt;MailUpdadetxt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="JobTiitleAddBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 29</value>
+  </data>
+  <data name="FirstNameUpdateTxt.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="FirstnameLbl.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;FirstNameUpdateTxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FirstnameLbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 20</value>
+  </data>
+  <data name="tRToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 26</value>
+  </data>
+  <data name="NumberLbl.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="TitleLbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NumberUpdatetxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 27</value>
+  </data>
+  <data name="&gt;&gt;LastNamelbl.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="SearchLbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 20</value>
+  </data>
+  <data name="&gt;&gt;PersonUpdateBtn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;PersonAddBtn.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;PersonUpdateBtn.Name" xml:space="preserve">
+    <value>PersonUpdateBtn</value>
+  </data>
+  <data name="&gt;&gt;PersonListDgw.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="JobTiitleAddBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1296, 770</value>
+  </data>
+  <data name="TitleLbl.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="TitleLbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1296, 380</value>
+  </data>
+  <data name="&gt;&gt;DepartmentLbl.Name" xml:space="preserve">
+    <value>DepartmentLbl</value>
+  </data>
+  <data name="MailUpdadetxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 27</value>
+  </data>
+  <data name="&gt;&gt;DepartmentLbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eNToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DepartmentLbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DeleteBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="DepartmentAddBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1296, 816</value>
+  </data>
+  <data name="&gt;&gt;DepartmentUpdateCombo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LastNameUpdateTxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 27</value>
+  </data>
+  <data name="&gt;&gt;languagesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SearchLbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DepartmentUpdateCombo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 28</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
-  <data name="TitleUpdateCombo.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="DepartmentLbl.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
-  <data name="&gt;&gt;NumberUpdatetxt.Name" xml:space="preserve">
-    <value>NumberUpdatetxt</value>
+  <data name="&gt;&gt;EmailLbl.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;FirstnameLbl.Name" xml:space="preserve">
-    <value>FirstnameLbl</value>
+  <data name="&gt;&gt;FirstNameUpdateTxt.Name" xml:space="preserve">
+    <value>FirstNameUpdateTxt</value>
   </data>
-  <data name="NumberLbl.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="DepartmentLbl.Text" xml:space="preserve">
+    <value>Bölümü</value>
   </data>
-  <data name="EmailLbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1296, 488</value>
-  </data>
-  <data name="EmailLbl.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="SearchTxt.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="FirstnameLbl.Text" xml:space="preserve">
-    <value>Adı</value>
-  </data>
-  <data name="&gt;&gt;DepartmentLbl.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;LastNamelbl.Name" xml:space="preserve">
+    <value>LastNamelbl</value>
   </data>
   <data name="&gt;&gt;NumberLbl.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tRToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="LastNamelbl.Text" xml:space="preserve">
+    <value>Soy Adı</value>
   </data>
-  <data name="LastNameUpdateTxt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 27</value>
+  <data name="MailUpdadetxt.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
-  <data name="&gt;&gt;MailUpdadetxt.Name" xml:space="preserve">
-    <value>MailUpdadetxt</value>
+  <data name="&gt;&gt;NumberUpdatetxt.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="SearchLbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1364, 65</value>
+  <data name="&gt;&gt;FirstnameLbl.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="DeleteBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;NumberUpdatetxt.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="PersonAddBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 29</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Form1</value>
   </data>
-  <data name="TitleLbl.AutoSize" type="System.Boolean, mscorlib">
+  <data name="&gt;&gt;SearchLbl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tRToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LastNameUpdateTxt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="SearchLbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="eNToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 26</value>
+  <data name="&gt;&gt;SearchLbl.Name" xml:space="preserve">
+    <value>SearchLbl</value>
   </data>
-  <data name="&gt;&gt;DepartmentAddBtn.Parent" xml:space="preserve">
+  <data name="&gt;&gt;MailUpdadetxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PersonAddBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;JobTiitleAddBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="NumberLbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DepartmentLbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1296, 326</value>
+  </data>
+  <data name="NumberLbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 20</value>
+  </data>
+  <data name="SearchTxt.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="SearchLbl.Text" xml:space="preserve">
+    <value>Ara</value>
+  </data>
+  <data name="DeleteBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 31</value>
+  </data>
+  <data name="&gt;&gt;DepartmentLbl.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;PersonUpdateBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SearchTxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PersonAddBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1296, 868</value>
+  </data>
+  <data name="&gt;&gt;NumberUpdatetxt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;EmailLbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>HomePage</value>
+  </data>
+  <data name="&gt;&gt;eNToolStripMenuItem.Name" xml:space="preserve">
+    <value>eNToolStripMenuItem</value>
+  </data>
+  <data name="PersonListDgw.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="PersonListDgw.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1178, 885</value>
+  </data>
+  <data name="&gt;&gt;JobTiitleAddBtn.Name" xml:space="preserve">
+    <value>JobTiitleAddBtn</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;LastNamelbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DepartmentUpdateCombo.Name" xml:space="preserve">
+    <value>DepartmentUpdateCombo</value>
+  </data>
+  <data name="FirstnameLbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TitleUpdateCombo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 28</value>
+  </data>
+  <data name="TitleUpdateCombo.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="TitleLbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 20</value>
+  </data>
+  <data name="FirstNameUpdateTxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 27</value>
+  </data>
+  <data name="LastNameUpdateTxt.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;NumberLbl.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;JobTiitleAddBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FirstnameLbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SearchTxt.Name" xml:space="preserve">
+    <value>SearchTxt</value>
+  </data>
+  <data name="TitleLbl.Text" xml:space="preserve">
+    <value>Ünvanı</value>
+  </data>
+  <data name="&gt;&gt;TitleUpdateCombo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SearchTxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1418, 58</value>
+  </data>
+  <data name="&gt;&gt;NumberLbl.Name" xml:space="preserve">
+    <value>NumberLbl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DeleteBtn.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="DeleteBtn.Text" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="NumberUpdatetxt.Mask" xml:space="preserve">
+    <value>(500) 000-0000</value>
+  </data>
+  <data name="&gt;&gt;NumberUpdatetxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1902, 1033</value>
+  </data>
+  <data name="LastNamelbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TitleLbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="languagesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 24</value>
+  </data>
+  <data name="languagesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Languages</value>
+  </data>
+  <data name="&gt;&gt;TitleUpdateCombo.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="EmailLbl.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 20</value>
   </data>
-  <data name="&gt;&gt;NumberUpdatetxt.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;NumberUpdatetxt.Name" xml:space="preserve">
+    <value>NumberUpdatetxt</value>
   </data>
-  <data name="&gt;&gt;NumberLbl.Name" xml:space="preserve">
-    <value>NumberLbl</value>
+  <data name="&gt;&gt;DepartmentAddBtn.ZOrder" xml:space="preserve">
+    <value>17</value>
   </data>
-  <data name="&gt;&gt;EmailLbl.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="languagesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Languages</value>
-  </data>
-  <data name="MailUpdadetxt.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;PersonUpdateBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SearchTxt.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;SearchLbl.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>en-US</value>
-  </metadata>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+    <value>shi</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
 </root>

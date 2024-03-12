@@ -26,7 +26,7 @@ namespace RehberUygulaması
             {
                 efJobTitleDal.jobTitleAdd(JobTitleAddTxt.Text);
                 MessageBox.Show("Ünvan Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                JobTitleListDgw.DataSource = efJobTitleDal.JsonList();
+                efJobTitleDal.TitleList(JobTitleListDgw);
             }
             catch (Exception ex)
             {
