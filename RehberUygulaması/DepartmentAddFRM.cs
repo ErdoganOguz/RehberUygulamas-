@@ -31,9 +31,7 @@ namespace RehberUygulaması
         {
             try
             {
-                efDepartmentDal.departmentAdd(DepartmentAddTxt.Text);
-                MessageBox.Show("Departman Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                efDepartmentDal.DepartmentList(DepaermentListDgw);
+                efDepartmentDal.departmentAdd(DepartmentAddTxt, DepaermentListDgw);
             }
             catch (Exception ex)
             {

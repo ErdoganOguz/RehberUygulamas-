@@ -14,6 +14,7 @@ namespace DataAccess.Concrete
     {
         string fileName = "C:\\RehberUygulaması\\Department.json";
         string DepartmentId;
+       // EfPersonDal personDal = new EfPersonDal();
         
         public List<Department> JsonList()
         {
@@ -32,30 +33,41 @@ namespace DataAccess.Concrete
             }
             return JsonModelList;
         }
-        public void departmentAdd(string departmentName)
+        public void departmentAdd(TextBox departmentName , DataGridView dataGrid)
         {
-            try
+            if (!string.IsNullOrEmpty(departmentName.Text))
             {
-                var department = new Department()
+                try
                 {
+                    var department = new Department()
+                    {
 
-                    Id = JsonList().Count() + 1,
-                    DepartmentName = departmentName,
-                    CreateDate = DateTime.Now,
-                    IsDeleted = false
-                };
-                List<Department> data = JsonList();
-                var oldData = JsonConvert.SerializeObject(data, Formatting.Indented);
-                var departmentJson = JsonConvert.SerializeObject(department, Formatting.Indented);
-                oldData = RemoveSquareBrackets(oldData);
-                File.WriteAllText(fileName, " ");
-                File.WriteAllText(fileName, "[" + oldData + "," + departmentJson + "]");
-                RemoveSquareBrackets(fileName);
+                        Id = JsonList().Count() + 1,
+                        DepartmentName = departmentName.Text,
+                        CreateDate = DateTime.Now,
+                        IsDeleted = false
+                    };
+                    List<Department> data = JsonList();
+                    var oldData = JsonConvert.SerializeObject(data, Formatting.Indented);
+                    var departmentJson = JsonConvert.SerializeObject(department, Formatting.Indented);
+                    oldData = RemoveSquareBrackets(oldData);
+                    File.WriteAllText(fileName, " ");
+                    File.WriteAllText(fileName, "[" + oldData + "," + departmentJson + "]");
+                    RemoveSquareBrackets(fileName);
+                    MessageBox.Show("Departman Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Bir Hata Oluştu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                DepartmentList(dataGrid);
+                departmentName.Clear();
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message, "Bir Hata Oluştu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Lütfen Eklemek İstediğiniz Deparmanın adını Giriniz","Hata" , MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            
         }
         public static string RemoveSquareBrackets(string input)
         {

@@ -127,6 +127,9 @@
   <data name="FirstnameLbl.Text" xml:space="preserve">
     <value>Adı</value>
   </data>
+  <data name="languagesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Diller</value>
+  </data>
   <data name="SearchLbl.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 20</value>
   </data>

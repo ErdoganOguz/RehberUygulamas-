@@ -14,7 +14,7 @@ namespace DataAccess.Concrete
     {
         string fileName = "C:\\RehberUygulaması\\JobTitle.json";
 
-
+    // EfPersonDal person = new EfPersonDal();
 
         public List<JobTitle> JsonList()
         {
